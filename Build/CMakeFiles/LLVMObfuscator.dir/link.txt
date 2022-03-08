@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -Wl,-rpath-link,  -Wl,-O3 -Wl,--gc-sections -shared  -o LLVMObfuscator.so CMakeFiles/LLVMObfuscator.dir/src/HelloWorld.cpp.o CMakeFiles/LLVMObfuscator.dir/src/SplitBasicBlock.cpp.o  -Wl,-rpath,"\$ORIGIN/../lib" 

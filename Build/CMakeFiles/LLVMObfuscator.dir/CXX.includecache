@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/include/SplitBasicBlock.h
+llvm/IR/Function.h
+/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/include/llvm/IR/Function.h
+llvm/Pass.h
+/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/include/llvm/Pass.h
+
+/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/src/SplitBasicBlock.cpp
+SplitBasicBlock.h
+/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/src/SplitBasicBlock.h
+llvm/Support/raw_ostream.h
+/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/src/llvm/Support/raw_ostream.h
+llvm/Support/CommandLine.h
+/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/src/llvm/Support/CommandLine.h
+llvm/IR/Instructions.h
+/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/src/llvm/IR/Instructions.h
+vector
+-
+
