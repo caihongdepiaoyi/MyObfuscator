@@ -1,14 +1,15 @@
-; ModuleID = 'TestProgram.ll'
+; ModuleID = 'IR/TestProgram_orig.ll'
 source_filename = "TestProgram.cpp"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-@input = dso_local global [100 x i8] zeroinitializer, align 16
+@input = dso_local global i8* null, align 8
 @enc = dso_local global <{ [22 x i8], [78 x i8] }> <{ [22 x i8] c"\86\8A}\87\93\8BM\81\80\8AC\7FII\86q\7FbSi(\9D", [78 x i8] zeroinitializer }>, align 16
-@.str = private unnamed_addr constant [25 x i8] c"Please input your flag: \00", align 1
-@.str.1 = private unnamed_addr constant [3 x i8] c"%s\00", align 1
-@.str.2 = private unnamed_addr constant [18 x i8] c"Congratulations~\0A\00", align 1
-@.str.3 = private unnamed_addr constant [18 x i8] c"Sorry try again.\0A\00", align 1
+@.str = private unnamed_addr constant [26 x i8] c"Welcome to LLVM world...\0A\00", align 1
+@.str.1 = private unnamed_addr constant [33 x i8] c"Input your flag as an argument.\0A\00", align 1
+@.str.2 = private unnamed_addr constant [18 x i8] c"Your flag is: %s\0A\00", align 1
+@.str.3 = private unnamed_addr constant [18 x i8] c"Congratulations~\0A\00", align 1
+@.str.4 = private unnamed_addr constant [18 x i8] c"Sorry try again.\0A\00", align 1
 
 ; Function Attrs: mustprogress noinline nounwind optnone uwtable
 define dso_local void @_Z7encryptPhPc(i8* %0, i8* %1) #0 {
@@ -83,73 +84,104 @@ define dso_local void @_Z7encryptPhPc(i8* %0, i8* %1) #0 {
 declare dso_local i64 @strlen(i8*) #1
 
 ; Function Attrs: mustprogress noinline norecurse optnone uwtable
-define dso_local i32 @main() #2 {
-  %1 = alloca i32, align 4
-  %2 = alloca [100 x i8], align 16
-  %3 = alloca i8, align 1
-  store i32 0, i32* %1, align 4
-  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([25 x i8], [25 x i8]* @.str, i64 0, i64 0))
-  br label %5
+define dso_local i32 @main(i32 %0, i8** %1) #2 {
+  %3 = alloca i32, align 4
+  %4 = alloca i32, align 4
+  %5 = alloca i8**, align 8
+  %6 = alloca [100 x i8], align 16
+  br label %7
 
-5:                                                ; preds = %0
-  %6 = call i32 (i8*, ...) @__isoc99_scanf(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i64 0, i64 0), i8* getelementptr inbounds ([100 x i8], [100 x i8]* @input, i64 0, i64 0))
-  %7 = bitcast [100 x i8]* %2 to i8*
-  call void @llvm.memset.p0i8.i64(i8* align 16 %7, i8 0, i64 100, i1 false)
-  %8 = getelementptr inbounds [100 x i8], [100 x i8]* %2, i64 0, i64 0
-  call void @_Z7encryptPhPc(i8* %8, i8* getelementptr inbounds ([100 x i8], [100 x i8]* @input, i64 0, i64 0))
+7:                                                ; preds = %2
+  %8 = alloca i8, align 1
+  store i32 0, i32* %3, align 4
+  store i32 %0, i32* %4, align 4
+  store i8** %1, i8*** %5, align 8
   br label %9
 
-9:                                                ; preds = %5
-  %10 = call i64 @strlen(i8* getelementptr inbounds ([100 x i8], [100 x i8]* @input, i64 0, i64 0)) #5
-  %11 = icmp eq i64 %10, 22
-  br i1 %11, label %12, label %19
+9:                                                ; preds = %7
+  %10 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str, i64 0, i64 0))
+  %11 = load i32, i32* %4, align 4
+  %12 = icmp sle i32 %11, 1
+  br i1 %12, label %13, label %17
 
-12:                                               ; preds = %9
-  %13 = getelementptr inbounds [100 x i8], [100 x i8]* %2, i64 0, i64 0
-  %14 = call i32 @memcmp(i8* %13, i8* getelementptr inbounds ([100 x i8], [100 x i8]* bitcast (<{ [22 x i8], [78 x i8] }>* @enc to [100 x i8]*), i64 0, i64 0), i64 22) #5
+13:                                               ; preds = %9
+  %14 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([33 x i8], [33 x i8]* @.str.1, i64 0, i64 0))
   br label %15
 
-15:                                               ; preds = %12
-  %16 = icmp ne i32 %14, 0
-  %17 = xor i1 %16, true
-  br label %18
+15:                                               ; preds = %13
+  store i32 0, i32* %3, align 4
+  br label %16
 
-18:                                               ; preds = %15
-  br label %19
+16:                                               ; preds = %15
+  br label %49
 
-19:                                               ; preds = %18, %9
-  %20 = phi i1 [ false, %9 ], [ %17, %18 ]
-  %21 = zext i1 %20 to i8
-  store i8 %21, i8* %3, align 1
-  %22 = load i8, i8* %3, align 1
-  %23 = trunc i8 %22 to i1
-  br i1 %23, label %24, label %27
+17:                                               ; preds = %9
+  %18 = load i8**, i8*** %5, align 8
+  %19 = getelementptr inbounds i8*, i8** %18, i64 1
+  %20 = load i8*, i8** %19, align 8
+  store i8* %20, i8** @input, align 8
+  %21 = load i8*, i8** @input, align 8
+  br label %22
 
-24:                                               ; preds = %19
-  %25 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.2, i64 0, i64 0))
-  br label %26
+22:                                               ; preds = %17
+  %23 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.2, i64 0, i64 0), i8* %21)
+  %24 = bitcast [100 x i8]* %6 to i8*
+  call void @llvm.memset.p0i8.i64(i8* align 16 %24, i8 0, i64 100, i1 false)
+  %25 = getelementptr inbounds [100 x i8], [100 x i8]* %6, i64 0, i64 0
+  %26 = load i8*, i8** @input, align 8
+  br label %27
 
-26:                                               ; preds = %24
-  br label %30
+27:                                               ; preds = %22
+  call void @_Z7encryptPhPc(i8* %25, i8* %26)
+  %28 = load i8*, i8** @input, align 8
+  %29 = call i64 @strlen(i8* %28) #5
+  %30 = icmp eq i64 %29, 22
+  br i1 %30, label %31, label %38
 
-27:                                               ; preds = %19
-  %28 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.3, i64 0, i64 0))
-  br label %29
+31:                                               ; preds = %27
+  %32 = getelementptr inbounds [100 x i8], [100 x i8]* %6, i64 0, i64 0
+  %33 = call i32 @memcmp(i8* %32, i8* getelementptr inbounds ([100 x i8], [100 x i8]* bitcast (<{ [22 x i8], [78 x i8] }>* @enc to [100 x i8]*), i64 0, i64 0), i64 22) #5
+  br label %34
 
-29:                                               ; preds = %27
-  br label %30
+34:                                               ; preds = %31
+  %35 = icmp ne i32 %33, 0
+  %36 = xor i1 %35, true
+  br label %37
 
-30:                                               ; preds = %29, %26
-  %31 = load i32, i32* %1, align 4
-  br label %32
+37:                                               ; preds = %34
+  br label %38
 
-32:                                               ; preds = %30
-  ret i32 %31
+38:                                               ; preds = %37, %27
+  %39 = phi i1 [ false, %27 ], [ %36, %37 ]
+  %40 = zext i1 %39 to i8
+  store i8 %40, i8* %8, align 1
+  %41 = load i8, i8* %8, align 1
+  %42 = trunc i8 %41 to i1
+  br i1 %42, label %43, label %46
+
+43:                                               ; preds = %38
+  %44 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.3, i64 0, i64 0))
+  br label %45
+
+45:                                               ; preds = %43
+  br label %49
+
+46:                                               ; preds = %38
+  %47 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.4, i64 0, i64 0))
+  br label %48
+
+48:                                               ; preds = %46
+  br label %49
+
+49:                                               ; preds = %48, %45, %16
+  %50 = load i32, i32* %3, align 4
+  br label %51
+
+51:                                               ; preds = %49
+  ret i32 %50
 }
 
 declare dso_local i32 @printf(i8*, ...) #3
-
-declare dso_local i32 @__isoc99_scanf(i8*, ...) #3
 
 ; Function Attrs: argmemonly nofree nounwind willreturn writeonly
 declare void @llvm.memset.p0i8.i64(i8* nocapture writeonly, i8, i64, i1 immarg) #4

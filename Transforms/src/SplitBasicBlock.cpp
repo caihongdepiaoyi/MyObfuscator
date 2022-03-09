@@ -55,7 +55,7 @@ void SplitBasicBlock::split(BasicBlock *BB) {
     }
 }
 
-FunctionPass* createSplitBasicBlockPass() {
+FunctionPass* llvm::createSplitBasicBlockPass() {
     return new SplitBasicBlock();
 }
 

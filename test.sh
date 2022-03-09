@@ -1,8 +1,24 @@
+if [ ! -d "Build" ]; then
+    mkdir Build
+fi
 cd ./Build
 cmake ../Transforms
 make
 cd ../Test
-clang -S -emit-llvm TestProgram.cpp -o TestProgram.ll
-opt -load ../Build/LLVMObfuscator.so -splitBB -split_num 3 -S -enable-new-pm=0 TestProgram.ll -o TestProgram_split.ll
-clang TestProgram_split.ll -o TestProgram_split
-./TestProgram_split
+
+# 未混淆的ELF文件
+clang -S -emit-llvm TestProgram.cpp -o IR/TestProgram_orig.ll
+clang IR/TestProgram_orig.ll -o Bin/TestProgram_orig
+echo -e "\n\033[32m> Test case on original binary <\033[0m"
+./Bin/TestProgram_orig flag{s1mpl3_11vm_d3m0}
+
+# 基本块分割
+opt -load ../Build/LLVMObfuscator.so -splitBB -enable-new-pm=0 -split_num 3 -S IR/TestProgram_orig.ll -o IR/TestProgram_split.ll
+clang IR/TestProgram_split.ll -o Bin/TestProgram_split
+
+# 控制流平坦化
+opt -lowerswitch -S IR/TestProgram_orig.ll -o IR/TestProgram_lowerswitch.ll
+opt -load ../Build/LLVMObfuscator.so -fla -enable-new-pm=0 -split_num  3 -S IR/TestProgram_lowerswitch.ll -o IR/TestProgram_fla.ll
+clang IR/TestProgram_fla.ll -o Bin/TestProgram_fla
+echo -e "\n\033[32m> Test case on Flattening <\033[0m"
+./Bin/TestProgram_fla flag{s1mpl3_11vm_d3m0}

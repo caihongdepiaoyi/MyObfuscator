@@ -234,6 +234,33 @@ intrinsics_gen/fast:
 	$(MAKE) -f CMakeFiles/intrinsics_gen.dir/build.make CMakeFiles/intrinsics_gen.dir/build
 .PHONY : intrinsics_gen/fast
 
+src/Flattering.o: src/Flattering.cpp.o
+
+.PHONY : src/Flattering.o
+
+# target to build an object file
+src/Flattering.cpp.o:
+	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/Flattering.cpp.o
+.PHONY : src/Flattering.cpp.o
+
+src/Flattering.i: src/Flattering.cpp.i
+
+.PHONY : src/Flattering.i
+
+# target to preprocess a source file
+src/Flattering.cpp.i:
+	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/Flattering.cpp.i
+.PHONY : src/Flattering.cpp.i
+
+src/Flattering.s: src/Flattering.cpp.s
+
+.PHONY : src/Flattering.s
+
+# target to generate assembly for a file
+src/Flattering.cpp.s:
+	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/Flattering.cpp.s
+.PHONY : src/Flattering.cpp.s
+
 src/HelloWorld.o: src/HelloWorld.cpp.o
 
 .PHONY : src/HelloWorld.o
@@ -288,6 +315,33 @@ src/SplitBasicBlock.cpp.s:
 	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/SplitBasicBlock.cpp.s
 .PHONY : src/SplitBasicBlock.cpp.s
 
+src/Utils.o: src/Utils.cpp.o
+
+.PHONY : src/Utils.o
+
+# target to build an object file
+src/Utils.cpp.o:
+	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/Utils.cpp.o
+.PHONY : src/Utils.cpp.o
+
+src/Utils.i: src/Utils.cpp.i
+
+.PHONY : src/Utils.i
+
+# target to preprocess a source file
+src/Utils.cpp.i:
+	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/Utils.cpp.i
+.PHONY : src/Utils.cpp.i
+
+src/Utils.s: src/Utils.cpp.s
+
+.PHONY : src/Utils.s
+
+# target to generate assembly for a file
+src/Utils.cpp.s:
+	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/Utils.cpp.s
+.PHONY : src/Utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -306,12 +360,18 @@ help:
 	@echo "... omp_gen"
 	@echo "... install/strip"
 	@echo "... intrinsics_gen"
+	@echo "... src/Flattering.o"
+	@echo "... src/Flattering.i"
+	@echo "... src/Flattering.s"
 	@echo "... src/HelloWorld.o"
 	@echo "... src/HelloWorld.i"
 	@echo "... src/HelloWorld.s"
 	@echo "... src/SplitBasicBlock.o"
 	@echo "... src/SplitBasicBlock.i"
 	@echo "... src/SplitBasicBlock.s"
+	@echo "... src/Utils.o"
+	@echo "... src/Utils.i"
+	@echo "... src/Utils.s"
 .PHONY : help
 
 
