@@ -17,4 +17,5 @@ add_llvm_library( LLVMObfuscator MODULE
     src/SplitBasicBlock.cpp
     src/Utils.cpp
     src/Flattering.cpp
+    src/BogusControlFlow.cpp
 )

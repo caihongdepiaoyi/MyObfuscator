@@ -234,6 +234,33 @@ intrinsics_gen/fast:
 	$(MAKE) -f CMakeFiles/intrinsics_gen.dir/build.make CMakeFiles/intrinsics_gen.dir/build
 .PHONY : intrinsics_gen/fast
 
+src/BogusControlFlow.o: src/BogusControlFlow.cpp.o
+
+.PHONY : src/BogusControlFlow.o
+
+# target to build an object file
+src/BogusControlFlow.cpp.o:
+	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/BogusControlFlow.cpp.o
+.PHONY : src/BogusControlFlow.cpp.o
+
+src/BogusControlFlow.i: src/BogusControlFlow.cpp.i
+
+.PHONY : src/BogusControlFlow.i
+
+# target to preprocess a source file
+src/BogusControlFlow.cpp.i:
+	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/BogusControlFlow.cpp.i
+.PHONY : src/BogusControlFlow.cpp.i
+
+src/BogusControlFlow.s: src/BogusControlFlow.cpp.s
+
+.PHONY : src/BogusControlFlow.s
+
+# target to generate assembly for a file
+src/BogusControlFlow.cpp.s:
+	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/BogusControlFlow.cpp.s
+.PHONY : src/BogusControlFlow.cpp.s
+
 src/Flattering.o: src/Flattering.cpp.o
 
 .PHONY : src/Flattering.o
@@ -360,6 +387,9 @@ help:
 	@echo "... omp_gen"
 	@echo "... install/strip"
 	@echo "... intrinsics_gen"
+	@echo "... src/BogusControlFlow.o"
+	@echo "... src/BogusControlFlow.i"
+	@echo "... src/BogusControlFlow.s"
 	@echo "... src/Flattering.o"
 	@echo "... src/Flattering.i"
 	@echo "... src/Flattering.s"
