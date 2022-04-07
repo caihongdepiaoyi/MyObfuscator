@@ -9,8 +9,8 @@
 #include "llvm/IR/Value.h"
 #include "llvm/Pass.h"
 #include "llvm/Support/raw_ostream.h"
-#include "StringObfuscation.h"
-#include "CryptoUtils.h"
+#include "../include/StringObfuscation.h"
+#include "../include/CryptoUtils.h"
 #include "llvm/IR/IRBuilder.h"
 #include "llvm/Transforms/Utils/ModuleUtils.h"
 
@@ -29,67 +29,54 @@ namespace llvm {
         class StringObfuscationPass: public llvm::ModulePass {
                 public:
                 static char ID; // pass identification
-                bool is_flag = false;
+                bool is_flag = true;
                 StringObfuscationPass() : ModulePass(ID) {}
-                StringObfuscationPass(bool flag) : ModulePass(ID)
-                {
+                StringObfuscationPass(bool flag) : ModulePass(ID) {
+                    srand(time(0));
                     is_flag = flag;
                 }
 
                 virtual bool runOnModule(Module &M) {
-                        if(!is_flag)
-                            return false;
                         std::vector<GlobalVariable*> toDelConstGlob;
                         //std::vector<GlobalVariable*> encGlob;
                         std::vector<encVar*> encGlob;
-                        for (Module::global_iterator gi = M.global_begin(), ge = M.global_end();
-                                                gi != ge; ++gi) {
+                        for (Module::global_iterator gi = M.global_begin(), ge = M.global_end();gi != ge; ++gi) {
                                 // Loop over all global variables
                                 GlobalVariable* gv = &(*gi);
-                                //errs() << "Global var " << gv->getName();
+                                //errs() << "Global var " << gv->getName() << "\n";
                                 //outs() << *gv << " ";
                                 std::string::size_type str_idx = gv->getName().str().find(".str.");
+                                //outs() << gv->getSection() << "\n";
                                 std::string section(gv->getSection());
+                                if (gv->getName().str().substr(0,4)==".str" && gv->isConstant() &&
+                                    gv->hasInitializer() && isa<ConstantDataSequential>(gv->getInitializer()) &&
+                                    section != "llvm.metadata" && section.find("__objc_methname") == std::string::npos) {
+                                    ++GlobalsEncoded;
+                                    // Duplicate global variable
+                                    GlobalVariable *dynGV = new GlobalVariable(M,
+                                        gv->getType()->getElementType(),
+                                        !(gv->isConstant()), gv->getLinkage(),
+                                        (Constant*) 0, gv->getName(),
+                                        (GlobalVariable*) 0,
+                                        gv->getThreadLocalMode(),
+                                        gv->getType()->getAddressSpace()
+                                    );
+                                    dynGV->setInitializer(gv->getInitializer());
+                                    std::string tmp=gv->getName().str();
+                                    errs()<<"GV: "<<*gv<<"\n";
 
-                                // Let's encode the static ones
-                                if (gv->getName().str().substr(0,4)==".str"&&
-                                  gv->isConstant() &&
-                                gv->hasInitializer() &&
-                                isa<ConstantDataSequential>(gv->getInitializer()) &&
-                                section != "llvm.metadata" &&
-                                section.find("__objc_methname") == std::string::npos
-                              /*&&gv->getType()->getArrayElementType()->getArrayElementType()->isIntegerTy()*/) {
-                                        ++GlobalsEncoded;
-                                        //errs() << " is constant";
-
-                                        // Duplicate global variable
-                                        GlobalVariable *dynGV = new GlobalVariable(M,
-                                                                                  gv->getType()->getElementType(),
-                                                                                  !(gv->isConstant()), gv->getLinkage(),
-                                                                                  (Constant*) 0, gv->getName(),
-                                                                                  (GlobalVariable*) 0,
-                                                                                  gv->getThreadLocalMode(),
-                                                                                  gv->getType()->getAddressSpace());
-                                        // dynGV->copyAttributesFrom(gv);
-                                        dynGV->setInitializer(gv->getInitializer());
-
-                                        std::string tmp=gv->getName().str();
-                                      //  errs()<<"GV: "<<*gv<<"\n";
-
-                                        Constant *initializer = gv->getInitializer();
-                                        ConstantDataSequential *cdata = dyn_cast<ConstantDataSequential>(initializer);
-                                        if (cdata) {
+                                    Constant *initializer = gv->getInitializer();
+                                    ConstantDataSequential *cdata = dyn_cast<ConstantDataSequential>(initializer);
+                                    //outs() << *cdata << "\n";
+                                    if (cdata) {
                                                 const char *orig = cdata->getRawDataValues().data();
                                                 unsigned len = cdata->getNumElements()*cdata->getElementByteSize();
 
                                                 encVar *cur = new encVar();
                                                 cur->var = dynGV;
-                                                cur->key = cryptoutils->get_uint8_t();
-                                                // casting away const is undef. behavior in C++
-                                                // TODO a clean implementation would retrieve the data, generate a new constant
-                                                // set the correct type, and copy the data over.
-                                                //char *encr = new char[len];
-                                                //Constant *initnew = ConstantDataArray::getString(M.getContext(), encr, true);
+                                                //outs() << *cur->var << "\n";
+                                                cur->key = rand();
+                                                outs() << cur->key << "\n";
                                                 char *encr = const_cast<char *>(orig);
                                                 // Simple xor encoding
                                                 for (unsigned i = 0; i != len; ++i) {
@@ -105,15 +92,15 @@ namespace llvm {
                                                 // just copying default initializer for now
                                                 dynGV->setInitializer(initializer);
                                         }
-
-                                        // redirect references to new GV and remove old one
                                         gv->replaceAllUsesWith(dynGV);
                                         toDelConstGlob.push_back(gv);
+                                    }
+                              
 
-                                }
+
                         }
+                        outs() << "\n";
 
-                        // actuallte delete marked globals
                         for (unsigned i = 0, e = toDelConstGlob.size(); i != e; ++i)
                                 toDelConstGlob[i]->eraseFromParent();
 
@@ -125,14 +112,12 @@ namespace llvm {
 
                private:
                void addDecodeFunction(Module *mod, std::vector<encVar*> *gvars) {
-                        // Declare and add the function definition
-                        //errs()<<"Successful enter decode function"<<"\n";
-                        std::vector<Type*>FuncTy_args;
+                                           std::vector<Type*>FuncTy_args;
                         FunctionType* FuncTy = FunctionType::get(
                           /*Result=*/Type::getVoidTy(mod->getContext()),  // returning void
                           /*Params=*/FuncTy_args,  // taking no args
                           /*isVarArg=*/false);
-                        uint64_t StringObfDecodeRandomName = cryptoutils->get_uint64_t();
+                        uint64_t StringObfDecodeRandomName = rand();
                         std::string  random_str;
                         std::stringstream random_stream;
                         random_stream << StringObfDecodeRandomName;
@@ -202,15 +187,14 @@ namespace llvm {
                               builder.CreateRetVoid();
                               appendToGlobalCtors(*mod,fdecode,0);
 
-
-                }
+               }
 
         };
 
 }
 
 char StringObfuscationPass::ID = 0;
-static RegisterPass<StringObfuscationPass> X("test", "Global variable (i.e., const char*) diversification pass", false, true);
+static RegisterPass<StringObfuscationPass> X("str", "Global variable (i.e., const char*) diversification pass");
 
 Pass * llvm::createStringObfuscation(bool flag) {
     return new StringObfuscationPass(flag);

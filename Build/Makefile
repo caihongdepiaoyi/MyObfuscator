@@ -342,6 +342,33 @@ src/SplitBasicBlock.cpp.s:
 	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/SplitBasicBlock.cpp.s
 .PHONY : src/SplitBasicBlock.cpp.s
 
+src/StringObfuscation.o: src/StringObfuscation.cpp.o
+
+.PHONY : src/StringObfuscation.o
+
+# target to build an object file
+src/StringObfuscation.cpp.o:
+	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/StringObfuscation.cpp.o
+.PHONY : src/StringObfuscation.cpp.o
+
+src/StringObfuscation.i: src/StringObfuscation.cpp.i
+
+.PHONY : src/StringObfuscation.i
+
+# target to preprocess a source file
+src/StringObfuscation.cpp.i:
+	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/StringObfuscation.cpp.i
+.PHONY : src/StringObfuscation.cpp.i
+
+src/StringObfuscation.s: src/StringObfuscation.cpp.s
+
+.PHONY : src/StringObfuscation.s
+
+# target to generate assembly for a file
+src/StringObfuscation.cpp.s:
+	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/StringObfuscation.cpp.s
+.PHONY : src/StringObfuscation.cpp.s
+
 src/Utils.o: src/Utils.cpp.o
 
 .PHONY : src/Utils.o
@@ -399,6 +426,9 @@ help:
 	@echo "... src/SplitBasicBlock.o"
 	@echo "... src/SplitBasicBlock.i"
 	@echo "... src/SplitBasicBlock.s"
+	@echo "... src/StringObfuscation.o"
+	@echo "... src/StringObfuscation.i"
+	@echo "... src/StringObfuscation.s"
 	@echo "... src/Utils.o"
 	@echo "... src/Utils.i"
 	@echo "... src/Utils.s"

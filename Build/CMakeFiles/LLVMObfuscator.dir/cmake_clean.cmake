@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LLVMObfuscator.dir/src/Flattering.cpp.o"
   "CMakeFiles/LLVMObfuscator.dir/src/HelloWorld.cpp.o"
   "CMakeFiles/LLVMObfuscator.dir/src/SplitBasicBlock.cpp.o"
+  "CMakeFiles/LLVMObfuscator.dir/src/StringObfuscation.cpp.o"
   "CMakeFiles/LLVMObfuscator.dir/src/Utils.cpp.o"
   "LLVMObfuscator.pdb"
   "LLVMObfuscator.so"

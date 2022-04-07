@@ -29,3 +29,10 @@ echo -e "============================"
 clang IR/TestProgram_bcf.ll -o Bin/TestProgram_bcf
 echo -e "\n\033[32m> Test case on BogusCF <\033[0m"
 ./Bin/TestProgram_bcf flag{s1mpl3_11vm_d3m0}
+
+#stringObfuscation
+opt -load ../Build/LLVMObfuscator.so -str -enable-new-pm=0 -S IR/TestProgram_orig.ll -o IR/TestProgram_str.ll
+echo -e "============================"
+clang IR/TestProgram_str.ll -o Bin/TestProgram_str
+echo -e "\n\033[32m> Test case on StringObfuscation <\033[0m"
+./Bin/TestProgram_str flag{s1mpl3_11vm_d3m0}

@@ -18,4 +18,5 @@ add_llvm_library( LLVMObfuscator MODULE
     src/Utils.cpp
     src/Flattering.cpp
     src/BogusControlFlow.cpp
+    src/StringObfuscation.cpp
 )
