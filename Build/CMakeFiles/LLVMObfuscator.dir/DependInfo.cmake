@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/src/BogusControlFlow.cpp" "/home/starfish/Public/毕业论文/test/OLLVM++-demo/Build/CMakeFiles/LLVMObfuscator.dir/src/BogusControlFlow.cpp.o"
-  "/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/src/Flattering.cpp" "/home/starfish/Public/毕业论文/test/OLLVM++-demo/Build/CMakeFiles/LLVMObfuscator.dir/src/Flattering.cpp.o"
-  "/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/src/HelloWorld.cpp" "/home/starfish/Public/毕业论文/test/OLLVM++-demo/Build/CMakeFiles/LLVMObfuscator.dir/src/HelloWorld.cpp.o"
-  "/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/src/SplitBasicBlock.cpp" "/home/starfish/Public/毕业论文/test/OLLVM++-demo/Build/CMakeFiles/LLVMObfuscator.dir/src/SplitBasicBlock.cpp.o"
-  "/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/src/StringObfuscation.cpp" "/home/starfish/Public/毕业论文/test/OLLVM++-demo/Build/CMakeFiles/LLVMObfuscator.dir/src/StringObfuscation.cpp.o"
-  "/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/src/Utils.cpp" "/home/starfish/Public/毕业论文/test/OLLVM++-demo/Build/CMakeFiles/LLVMObfuscator.dir/src/Utils.cpp.o"
+  "/home/starfish/Public/毕业论文/test/WAP/Transforms/src/BogusControlFlow.cpp" "/home/starfish/Public/毕业论文/test/WAP/Build/CMakeFiles/LLVMObfuscator.dir/src/BogusControlFlow.cpp.o"
+  "/home/starfish/Public/毕业论文/test/WAP/Transforms/src/CognitiveComplexity.cpp" "/home/starfish/Public/毕业论文/test/WAP/Build/CMakeFiles/LLVMObfuscator.dir/src/CognitiveComplexity.cpp.o"
+  "/home/starfish/Public/毕业论文/test/WAP/Transforms/src/Flattering.cpp" "/home/starfish/Public/毕业论文/test/WAP/Build/CMakeFiles/LLVMObfuscator.dir/src/Flattering.cpp.o"
+  "/home/starfish/Public/毕业论文/test/WAP/Transforms/src/HelloWorld.cpp" "/home/starfish/Public/毕业论文/test/WAP/Build/CMakeFiles/LLVMObfuscator.dir/src/HelloWorld.cpp.o"
+  "/home/starfish/Public/毕业论文/test/WAP/Transforms/src/SplitBasicBlock.cpp" "/home/starfish/Public/毕业论文/test/WAP/Build/CMakeFiles/LLVMObfuscator.dir/src/SplitBasicBlock.cpp.o"
+  "/home/starfish/Public/毕业论文/test/WAP/Transforms/src/StringObfuscation.cpp" "/home/starfish/Public/毕业论文/test/WAP/Build/CMakeFiles/LLVMObfuscator.dir/src/StringObfuscation.cpp.o"
+  "/home/starfish/Public/毕业论文/test/WAP/Transforms/src/Utils.cpp" "/home/starfish/Public/毕业论文/test/WAP/Build/CMakeFiles/LLVMObfuscator.dir/src/Utils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -24,7 +25,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/./include"
+  "/home/starfish/Public/毕业论文/test/WAP/Transforms/./include"
   )
 
 # Targets to which this target links.

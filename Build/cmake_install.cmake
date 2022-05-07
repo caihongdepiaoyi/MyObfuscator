@@ -1,4 +1,4 @@
-# Install script for directory: /home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms
+# Install script for directory: /home/starfish/Public/毕业论文/test/WAP/Transforms
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xLLVMObfuscatorx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE MODULE FILES "/home/starfish/Public/毕业论文/test/OLLVM++-demo/Build/LLVMObfuscator.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE MODULE FILES "/home/starfish/Public/毕业论文/test/WAP/Build/LLVMObfuscator.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/LLVMObfuscator.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/LLVMObfuscator.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/starfish/Public/毕业论文/test/OLLVM++-demo/Build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/starfish/Public/毕业论文/test/WAP/Build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

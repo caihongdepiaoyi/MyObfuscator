@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms
+CMAKE_SOURCE_DIR = /home/starfish/Public/毕业论文/test/WAP/Transforms
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/starfish/Public/毕业论文/test/OLLVM++-demo/Build
+CMAKE_BINARY_DIR = /home/starfish/Public/毕业论文/test/WAP/Build
 
 # Utility rule file for acc_gen.
 
@@ -67,6 +67,6 @@ CMakeFiles/acc_gen.dir/clean:
 .PHONY : CMakeFiles/acc_gen.dir/clean
 
 CMakeFiles/acc_gen.dir/depend:
-	cd /home/starfish/Public/毕业论文/test/OLLVM++-demo/Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms /home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms /home/starfish/Public/毕业论文/test/OLLVM++-demo/Build /home/starfish/Public/毕业论文/test/OLLVM++-demo/Build /home/starfish/Public/毕业论文/test/OLLVM++-demo/Build/CMakeFiles/acc_gen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/starfish/Public/毕业论文/test/WAP/Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/starfish/Public/毕业论文/test/WAP/Transforms /home/starfish/Public/毕业论文/test/WAP/Transforms /home/starfish/Public/毕业论文/test/WAP/Build /home/starfish/Public/毕业论文/test/WAP/Build /home/starfish/Public/毕业论文/test/WAP/Build/CMakeFiles/acc_gen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/acc_gen.dir/depend
 

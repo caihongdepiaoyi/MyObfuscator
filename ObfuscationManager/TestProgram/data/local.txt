@@ -1,5 +1,1 @@
-.L.str
-.L.str.1
-.L.str.2
-.L.str.3
-.L.str.4
+str.bc  str1.bc  str2.bc  str3.bc  str4.bc  

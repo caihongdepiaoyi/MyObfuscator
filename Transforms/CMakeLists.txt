@@ -1,6 +1,6 @@
 # 参考官方文档：https://llvm.org/docs/CMake.html#developing-llvm-passes-out-of-source
 
-project(OLLVM++)
+project(WAP)
 cmake_minimum_required(VERSION 3.13.4)
 find_package(LLVM REQUIRED CONFIG)
 
@@ -19,4 +19,5 @@ add_llvm_library( LLVMObfuscator MODULE
     src/Flattering.cpp
     src/BogusControlFlow.cpp
     src/StringObfuscation.cpp
+    src/CognitiveComplexity.cpp
 )

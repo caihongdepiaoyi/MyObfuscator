@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms
+CMAKE_SOURCE_DIR = /home/starfish/Public/毕业论文/test/WAP/Transforms
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/starfish/Public/毕业论文/test/OLLVM++-demo/Build
+CMAKE_BINARY_DIR = /home/starfish/Public/毕业论文/test/WAP/Build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/starfish/Public/毕业论文/test/OLLVM++-demo/Build/CMakeFiles /home/starfish/Public/毕业论文/test/OLLVM++-demo/Build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/starfish/Public/毕业论文/test/WAP/Build/CMakeFiles /home/starfish/Public/毕业论文/test/WAP/Build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/starfish/Public/毕业论文/test/OLLVM++-demo/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/starfish/Public/毕业论文/test/WAP/Build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -260,6 +260,33 @@ src/BogusControlFlow.s: src/BogusControlFlow.cpp.s
 src/BogusControlFlow.cpp.s:
 	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/BogusControlFlow.cpp.s
 .PHONY : src/BogusControlFlow.cpp.s
+
+src/CognitiveComplexity.o: src/CognitiveComplexity.cpp.o
+
+.PHONY : src/CognitiveComplexity.o
+
+# target to build an object file
+src/CognitiveComplexity.cpp.o:
+	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/CognitiveComplexity.cpp.o
+.PHONY : src/CognitiveComplexity.cpp.o
+
+src/CognitiveComplexity.i: src/CognitiveComplexity.cpp.i
+
+.PHONY : src/CognitiveComplexity.i
+
+# target to preprocess a source file
+src/CognitiveComplexity.cpp.i:
+	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/CognitiveComplexity.cpp.i
+.PHONY : src/CognitiveComplexity.cpp.i
+
+src/CognitiveComplexity.s: src/CognitiveComplexity.cpp.s
+
+.PHONY : src/CognitiveComplexity.s
+
+# target to generate assembly for a file
+src/CognitiveComplexity.cpp.s:
+	$(MAKE) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/CognitiveComplexity.cpp.s
+.PHONY : src/CognitiveComplexity.cpp.s
 
 src/Flattering.o: src/Flattering.cpp.o
 
@@ -417,6 +444,9 @@ help:
 	@echo "... src/BogusControlFlow.o"
 	@echo "... src/BogusControlFlow.i"
 	@echo "... src/BogusControlFlow.s"
+	@echo "... src/CognitiveComplexity.o"
+	@echo "... src/CognitiveComplexity.i"
+	@echo "... src/CognitiveComplexity.s"
 	@echo "... src/Flattering.o"
 	@echo "... src/Flattering.i"
 	@echo "... src/Flattering.s"

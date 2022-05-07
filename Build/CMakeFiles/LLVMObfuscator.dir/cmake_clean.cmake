@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LLVMObfuscator.dir/src/BogusControlFlow.cpp.o"
+  "CMakeFiles/LLVMObfuscator.dir/src/CognitiveComplexity.cpp.o"
   "CMakeFiles/LLVMObfuscator.dir/src/Flattering.cpp.o"
   "CMakeFiles/LLVMObfuscator.dir/src/HelloWorld.cpp.o"
   "CMakeFiles/LLVMObfuscator.dir/src/SplitBasicBlock.cpp.o"

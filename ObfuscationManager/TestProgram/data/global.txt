@@ -1,2 +1,1 @@
-enc
-input
+enc.bc  input.bc  

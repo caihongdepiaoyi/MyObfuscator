@@ -1,4 +1,4 @@
-; ModuleID = 'IR/TestProgram_orig.ll'
+; ModuleID = 'IR/TestProgram_fla.ll'
 source_filename = "TestProgram.cpp"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
@@ -10,116 +10,21 @@ target triple = "x86_64-unknown-linux-gnu"
 @.str.2 = private unnamed_addr constant [18 x i8] c"Your flag is: %s\0A\00", align 1
 @.str.3 = private unnamed_addr constant [18 x i8] c"Congratulations~\0A\00", align 1
 @.str.4 = private unnamed_addr constant [18 x i8] c"Sorry try again.\0A\00", align 1
-@x = common global i32 0
-@y = common global i32 0
-@x.1 = common global i32 0
-@y.2 = common global i32 0
-@x.3 = common global i32 0
-@y.4 = common global i32 0
-@x.5 = common global i32 0
-@y.6 = common global i32 0
-@x.7 = common global i32 0
-@y.8 = common global i32 0
-@x.9 = common global i32 0
-@y.10 = common global i32 0
-@x.11 = common global i32 0
-@y.12 = common global i32 0
-@x.13 = common global i32 0
-@y.14 = common global i32 0
-@x.15 = common global i32 0
-@y.16 = common global i32 0
-@x.17 = common global i32 0
-@y.18 = common global i32 0
-@x.19 = common global i32 0
-@y.20 = common global i32 0
-@x.21 = common global i32 0
-@y.22 = common global i32 0
-@x.23 = common global i32 0
-@y.24 = common global i32 0
-@x.25 = common global i32 0
-@y.26 = common global i32 0
-@x.27 = common global i32 0
-@y.28 = common global i32 0
-@x.29 = common global i32 0
-@y.30 = common global i32 0
-@x.31 = common global i32 0
-@y.32 = common global i32 0
-@x.33 = common global i32 0
-@y.34 = common global i32 0
-@x.35 = common global i32 0
-@y.36 = common global i32 0
-@x.37 = common global i32 0
-@y.38 = common global i32 0
-@x.39 = common global i32 0
-@y.40 = common global i32 0
-@x.41 = common global i32 0
-@y.42 = common global i32 0
-@x.43 = common global i32 0
-@y.44 = common global i32 0
-@x.45 = common global i32 0
-@y.46 = common global i32 0
-@x.47 = common global i32 0
-@y.48 = common global i32 0
-@x.49 = common global i32 0
-@y.50 = common global i32 0
-@x.51 = common global i32 0
-@y.52 = common global i32 0
-@x.53 = common global i32 0
-@y.54 = common global i32 0
-@x.55 = common global i32 0
-@y.56 = common global i32 0
-@x.57 = common global i32 0
-@y.58 = common global i32 0
-@x.59 = common global i32 0
-@y.60 = common global i32 0
-@x.61 = common global i32 0
-@y.62 = common global i32 0
-@x.63 = common global i32 0
-@y.64 = common global i32 0
-@x.65 = common global i32 0
-@y.66 = common global i32 0
-@x.67 = common global i32 0
-@y.68 = common global i32 0
-@x.69 = common global i32 0
-@y.70 = common global i32 0
-@x.71 = common global i32 0
-@y.72 = common global i32 0
-@x.73 = common global i32 0
-@y.74 = common global i32 0
-@x.75 = common global i32 0
-@y.76 = common global i32 0
-@x.77 = common global i32 0
-@y.78 = common global i32 0
-@x.79 = common global i32 0
-@y.80 = common global i32 0
-@x.81 = common global i32 0
-@y.82 = common global i32 0
-@x.83 = common global i32 0
-@y.84 = common global i32 0
-@x.85 = common global i32 0
-@y.86 = common global i32 0
-@x.87 = common global i32 0
-@y.88 = common global i32 0
-@x.89 = common global i32 0
-@y.90 = common global i32 0
-@x.91 = common global i32 0
-@y.92 = common global i32 0
-@x.93 = common global i32 0
-@y.94 = common global i32 0
 
 ; Function Attrs: mustprogress noinline nounwind optnone uwtable
 define dso_local void @_Z7encryptPhPc(i8* %0, i8* %1) #0 {
-  %.reg2mem38 = alloca i32, align 4
-  %.reg2mem32 = alloca i32, align 4
-  %.reg2mem28 = alloca i1, align 1
-  %.reg2mem24 = alloca i32, align 4
-  %.reg2mem22 = alloca i32, align 4
-  %.reg2mem9 = alloca i32*, align 8
-  %.reg2mem6 = alloca i32*, align 8
-  %.reg2mem2 = alloca i8**, align 8
-  %.reg2mem = alloca i8**, align 8
-  %3 = load i32, i32* @x, align 4
-  %4 = load i32, i32* @y, align 4
+  %.reg2mem38 = alloca i1, align 1
+  %.reg2mem13 = alloca i32*, align 8
+  %.reg2mem9 = alloca i8**, align 8
+  %.reg2mem6 = alloca i8**, align 8
+  %.reg2mem.reg2mem = alloca i32*, align 8
+  %.reg2mem1.reg2mem = alloca i32*, align 8
+  %.reg2mem3.reg2mem = alloca i32*, align 8
+  %.reg2mem5.reg2mem = alloca i32*, align 8
+  %x = alloca i32, align 4
+  %y = alloca i32, align 4
+  %3 = load i32, i32* %x, align 4
+  %4 = load i32, i32* %y, align 4
   %5 = icmp slt i32 %4, 10
   %6 = add i32 %3, 1
   %7 = mul i32 %6, %3
@@ -129,370 +34,507 @@ define dso_local void @_Z7encryptPhPc(i8* %0, i8* %1) #0 {
   br i1 %10, label %bodyBB, label %bodyBBcloneBB
 
 bodyBB:                                           ; preds = %bodyBBcloneBB, %2
+  %.reg2mem5 = alloca i32, align 4
+  store i32* %.reg2mem5, i32** %.reg2mem5.reg2mem, align 8
+  %.reg2mem3 = alloca i32, align 4
+  store i32* %.reg2mem3, i32** %.reg2mem3.reg2mem, align 8
+  %.reg2mem1 = alloca i32, align 4
+  store i32* %.reg2mem1, i32** %.reg2mem1.reg2mem, align 8
+  %.reg2mem = alloca i32, align 4
+  store i32* %.reg2mem, i32** %.reg2mem.reg2mem, align 8
   %11 = alloca i8*, align 8
-  store i8** %11, i8*** %.reg2mem, align 8
+  store i8** %11, i8*** %.reg2mem6, align 8
   %12 = alloca i8*, align 8
-  store i8** %12, i8*** %.reg2mem2, align 8
+  store i8** %12, i8*** %.reg2mem9, align 8
   %13 = alloca i32, align 4
-  store i32* %13, i32** %.reg2mem6, align 8
-  %14 = alloca i32, align 4
-  store i32* %14, i32** %.reg2mem9, align 8
-  %.reload1 = load volatile i8**, i8*** %.reg2mem, align 8
-  store i8* %0, i8** %.reload1, align 8
-  %.reload5 = load volatile i8**, i8*** %.reg2mem2, align 8
-  store i8* %1, i8** %.reload5, align 8
-  %15 = load i32, i32* @x.1, align 4
-  %16 = load i32, i32* @y.2, align 4
-  %17 = icmp slt i32 %16, 10
-  %18 = add i32 %15, 1
-  %19 = mul i32 %18, %15
-  %20 = urem i32 %19, 2
-  %21 = icmp eq i32 %20, 0
-  %22 = or i1 %17, %21
-  br i1 %22, label %endBB, label %bodyBBcloneBB
+  store i32* %13, i32** %.reg2mem13, align 8
+  %x16 = alloca i32, align 4
+  %y17 = alloca i32, align 4
+  %14 = load i32, i32* %x16, align 4
+  %15 = load i32, i32* %y17, align 4
+  %16 = icmp slt i32 %15, 10
+  %17 = add i32 %14, 1
+  %18 = mul i32 %17, %14
+  %19 = urem i32 %18, 2
+  %20 = icmp eq i32 %19, 0
+  %21 = or i1 %16, %20
+  br i1 %21, label %endBB, label %bodyBBcloneBB
 
 endBB:                                            ; preds = %bodyBB
-  br label %23
+  br label %22
 
-23:                                               ; preds = %endBB
-  %24 = load i32, i32* @x.3, align 4
-  %25 = load i32, i32* @y.4, align 4
-  %26 = icmp slt i32 %25, 10
-  %27 = add i32 %24, 1
-  %28 = mul i32 %27, %24
-  %29 = urem i32 %28, 2
-  %30 = icmp eq i32 %29, 0
-  %31 = or i1 %26, %30
-  br i1 %31, label %bodyBB18, label %bodyBB18cloneBB
+22:                                               ; preds = %endBB
+  %23 = alloca i32, align 4
+  %.reload8 = load volatile i8**, i8*** %.reg2mem6, align 8
+  store i8* %0, i8** %.reload8, align 8
+  %.reload12 = load volatile i8**, i8*** %.reg2mem9, align 8
+  store i8* %1, i8** %.reload12, align 8
+  %swVar.ptr = alloca i32, align 4
+  store i32 1497969506, i32* %swVar.ptr, align 4
+  br label %dispatchBB
 
-bodyBB18:                                         ; preds = %bodyBB18cloneBB, %23
-  %.reload4 = load volatile i8**, i8*** %.reg2mem2, align 8
-  %32 = load i8*, i8** %.reload4, align 8
-  %33 = call i64 @strlen(i8* %32) #5
-  %34 = trunc i64 %33 to i32
-  %.reload8 = load volatile i32*, i32** %.reg2mem6, align 8
-  store i32 %34, i32* %.reload8, align 4
-  %.reload17 = load volatile i32*, i32** %.reg2mem9, align 8
-  store i32 0, i32* %.reload17, align 4
-  %35 = load i32, i32* @x.5, align 4
-  %36 = load i32, i32* @y.6, align 4
-  %37 = icmp slt i32 %36, 10
-  %38 = add i32 %35, 1
-  %39 = mul i32 %38, %35
-  %40 = urem i32 %39, 2
-  %41 = icmp eq i32 %40, 0
-  %42 = or i1 %37, %41
-  br i1 %42, label %endBB19, label %bodyBB18cloneBB
+dispatchBB:                                       ; preds = %endBB75, %22
+  %swVar = load i32, i32* %swVar.ptr, align 4
+  br label %24
+
+24:                                               ; preds = %dispatchBB
+  switch i32 %swVar, label %swDefault [
+    i32 1497969506, label %41
+    i32 1501903019, label %62
+    i32 933088029, label %82
+    i32 1294384553, label %102
+    i32 393147266, label %129
+    i32 340395374, label %154
+    i32 1655559191, label %174
+    i32 1565216025, label %192
+  ]
+
+swDefault:                                        ; preds = %24
+  %x20 = alloca i32, align 4
+  %y21 = alloca i32, align 4
+  %25 = load i32, i32* %x20, align 4
+  %26 = load i32, i32* %y21, align 4
+  %27 = icmp slt i32 %26, 10
+  %28 = add i32 %25, 1
+  %29 = mul i32 %28, %25
+  %30 = urem i32 %29, 2
+  %31 = icmp eq i32 %30, 0
+  %32 = or i1 %27, %31
+  br i1 %32, label %bodyBB18, label %bodyBB18cloneBB
+
+bodyBB18:                                         ; preds = %bodyBB18cloneBB, %swDefault
+  %x22 = alloca i32, align 4
+  %y23 = alloca i32, align 4
+  %33 = load i32, i32* %x22, align 4
+  %34 = load i32, i32* %y23, align 4
+  %35 = icmp slt i32 %34, 10
+  %36 = add i32 %33, 1
+  %37 = mul i32 %36, %33
+  %38 = urem i32 %37, 2
+  %39 = icmp eq i32 %38, 0
+  %40 = or i1 %35, %39
+  br i1 %40, label %endBB19, label %bodyBB18cloneBB
 
 endBB19:                                          ; preds = %bodyBB18
-  br label %43
+  br label %returnBB
 
-43:                                               ; preds = %endBB41, %endBB19
-  %44 = load i32, i32* @x.7, align 4
-  %45 = load i32, i32* @y.8, align 4
-  %46 = icmp slt i32 %45, 10
-  %47 = add i32 %44, 1
-  %48 = mul i32 %47, %44
-  %49 = urem i32 %48, 2
-  %50 = icmp eq i32 %49, 0
-  %51 = or i1 %46, %50
-  br i1 %51, label %bodyBB20, label %bodyBB20cloneBB
+41:                                               ; preds = %24
+  %x26 = alloca i32, align 4
+  %y27 = alloca i32, align 4
+  %42 = load i32, i32* %x26, align 4
+  %43 = load i32, i32* %y27, align 4
+  %44 = icmp slt i32 %43, 10
+  %45 = add i32 %42, 1
+  %46 = mul i32 %45, %42
+  %47 = urem i32 %46, 2
+  %48 = icmp eq i32 %47, 0
+  %49 = or i1 %44, %48
+  br i1 %49, label %bodyBB24, label %bodyBB24cloneBB
 
-bodyBB20:                                         ; preds = %bodyBB20cloneBB, %43
-  %.reload16 = load volatile i32*, i32** %.reg2mem9, align 8
-  %52 = load i32, i32* %.reload16, align 4
-  store i32 %52, i32* %.reg2mem22, align 4
-  %.reload7 = load volatile i32*, i32** %.reg2mem6, align 8
-  %53 = load i32, i32* %.reload7, align 4
-  store i32 %53, i32* %.reg2mem24, align 4
-  %54 = load i32, i32* @x.9, align 4
-  %55 = load i32, i32* @y.10, align 4
-  %56 = icmp slt i32 %55, 10
-  %57 = add i32 %54, 1
-  %58 = mul i32 %57, %54
-  %59 = urem i32 %58, 2
-  %60 = icmp eq i32 %59, 0
-  %61 = or i1 %56, %60
-  br i1 %61, label %endBB21, label %bodyBB20cloneBB
+bodyBB24:                                         ; preds = %bodyBB24cloneBB, %41
+  %.reload11 = load volatile i8**, i8*** %.reg2mem9, align 8
+  %50 = load i8*, i8** %.reload11, align 8
+  %51 = call i64 @strlen(i8* %50) #5
+  %52 = trunc i64 %51 to i32
+  %.reload15 = load volatile i32*, i32** %.reg2mem13, align 8
+  store i32 %52, i32* %.reload15, align 4
+  %x28 = alloca i32, align 4
+  %y29 = alloca i32, align 4
+  %53 = load i32, i32* %x28, align 4
+  %54 = load i32, i32* %y29, align 4
+  %55 = icmp slt i32 %54, 10
+  %56 = add i32 %53, 1
+  %57 = mul i32 %56, %53
+  %58 = urem i32 %57, 2
+  %59 = icmp eq i32 %58, 0
+  %60 = or i1 %55, %59
+  br i1 %60, label %endBB25, label %bodyBB24cloneBB
 
-endBB21:                                          ; preds = %bodyBB20
-  br label %62
+endBB25:                                          ; preds = %bodyBB24
+  br label %61
 
-62:                                               ; preds = %endBB21
-  %63 = load i32, i32* @x.11, align 4
-  %64 = load i32, i32* @y.12, align 4
-  %65 = icmp slt i32 %64, 10
-  %66 = add i32 %63, 1
-  %67 = mul i32 %66, %63
-  %68 = urem i32 %67, 2
-  %69 = icmp eq i32 %68, 0
-  %70 = or i1 %65, %69
-  br i1 %70, label %bodyBB26, label %bodyBB26cloneBB
+61:                                               ; preds = %endBB25
+  store i32 0, i32* %23, align 4
+  store i32 1501903019, i32* %swVar.ptr, align 4
+  br label %returnBB
 
-bodyBB26:                                         ; preds = %bodyBB26cloneBB, %62
-  %.reload23 = load volatile i32, i32* %.reg2mem22, align 4
-  %.reload25 = load volatile i32, i32* %.reg2mem24, align 4
-  %71 = icmp slt i32 %.reload23, %.reload25
-  store i1 %71, i1* %.reg2mem28, align 1
-  %72 = load i32, i32* @x.13, align 4
-  %73 = load i32, i32* @y.14, align 4
-  %74 = icmp slt i32 %73, 10
-  %75 = add i32 %72, 1
-  %76 = mul i32 %75, %72
-  %77 = urem i32 %76, 2
-  %78 = icmp eq i32 %77, 0
-  %79 = or i1 %74, %78
-  br i1 %79, label %endBB27, label %bodyBB26cloneBB
+62:                                               ; preds = %24
+  %63 = load i32, i32* %23, align 4
+  %.reg2mem.reload4 = load volatile i32*, i32** %.reg2mem.reg2mem, align 8
+  store i32 %63, i32* %.reg2mem.reload4, align 4
+  %.reload14 = load volatile i32*, i32** %.reg2mem13, align 8
+  %64 = load i32, i32* %.reload14, align 4
+  br label %65
 
-endBB27:                                          ; preds = %bodyBB26
-  %.reload29 = load volatile i1, i1* %.reg2mem28, align 1
-  br i1 %.reload29, label %80, label %166
+65:                                               ; preds = %62
+  %x32 = alloca i32, align 4
+  %y33 = alloca i32, align 4
+  %66 = load i32, i32* %x32, align 4
+  %67 = load i32, i32* %y33, align 4
+  %68 = icmp slt i32 %67, 10
+  %69 = add i32 %66, 1
+  %70 = mul i32 %69, %66
+  %71 = urem i32 %70, 2
+  %72 = icmp eq i32 %71, 0
+  %73 = or i1 %68, %72
+  br i1 %73, label %bodyBB30, label %bodyBB30cloneBB
 
-80:                                               ; preds = %endBB27
-  %81 = load i32, i32* @x.15, align 4
-  %82 = load i32, i32* @y.16, align 4
-  %83 = icmp slt i32 %82, 10
-  %84 = add i32 %81, 1
-  %85 = mul i32 %84, %81
-  %86 = urem i32 %85, 2
-  %87 = icmp eq i32 %86, 0
-  %88 = or i1 %83, %87
-  br i1 %88, label %bodyBB30, label %bodyBB30cloneBB
-
-bodyBB30:                                         ; preds = %bodyBB30cloneBB, %80
-  %.reload3 = load volatile i8**, i8*** %.reg2mem2, align 8
-  %89 = load i8*, i8** %.reload3, align 8
-  %.reload15 = load volatile i32*, i32** %.reg2mem9, align 8
-  %90 = load i32, i32* %.reload15, align 4
-  %91 = sext i32 %90 to i64
-  %92 = getelementptr inbounds i8, i8* %89, i64 %91
-  %93 = load i8, i8* %92, align 1
-  %94 = sext i8 %93 to i32
-  %.reload14 = load volatile i32*, i32** %.reg2mem9, align 8
-  %95 = load i32, i32* %.reload14, align 4
-  %96 = sub nsw i32 32, %95
-  %97 = add nsw i32 %94, %96
-  store i32 %97, i32* %.reg2mem32, align 4
-  %98 = load i32, i32* @x.17, align 4
-  %99 = load i32, i32* @y.18, align 4
-  %100 = icmp slt i32 %99, 10
-  %101 = add i32 %98, 1
-  %102 = mul i32 %101, %98
-  %103 = urem i32 %102, 2
-  %104 = icmp eq i32 %103, 0
-  %105 = or i1 %100, %104
-  br i1 %105, label %endBB31, label %bodyBB30cloneBB
+bodyBB30:                                         ; preds = %bodyBB30cloneBB, %65
+  %.reg2mem1.reload3 = load volatile i32*, i32** %.reg2mem1.reg2mem, align 8
+  store i32 %64, i32* %.reg2mem1.reload3, align 4
+  store i32 933088029, i32* %swVar.ptr, align 4
+  %x34 = alloca i32, align 4
+  %y35 = alloca i32, align 4
+  %74 = load i32, i32* %x34, align 4
+  %75 = load i32, i32* %y35, align 4
+  %76 = icmp slt i32 %75, 10
+  %77 = add i32 %74, 1
+  %78 = mul i32 %77, %74
+  %79 = urem i32 %78, 2
+  %80 = icmp eq i32 %79, 0
+  %81 = or i1 %76, %80
+  br i1 %81, label %endBB31, label %bodyBB30cloneBB
 
 endBB31:                                          ; preds = %bodyBB30
-  br label %106
+  br label %returnBB
 
-106:                                              ; preds = %endBB31
-  %107 = load i32, i32* @x.19, align 4
-  %108 = load i32, i32* @y.20, align 4
-  %109 = icmp slt i32 %108, 10
-  %110 = add i32 %107, 1
-  %111 = mul i32 %110, %107
-  %112 = urem i32 %111, 2
-  %113 = icmp eq i32 %112, 0
-  %114 = or i1 %109, %113
-  br i1 %114, label %bodyBB34, label %bodyBB34cloneBB
+82:                                               ; preds = %24
+  %x40 = alloca i32, align 4
+  %y41 = alloca i32, align 4
+  %83 = load i32, i32* %x40, align 4
+  %84 = load i32, i32* %y41, align 4
+  %85 = icmp slt i32 %84, 10
+  %86 = add i32 %83, 1
+  %87 = mul i32 %86, %83
+  %88 = urem i32 %87, 2
+  %89 = icmp eq i32 %88, 0
+  %90 = or i1 %85, %89
+  br i1 %90, label %bodyBB36, label %bodyBB36cloneBB
 
-bodyBB34:                                         ; preds = %bodyBB34cloneBB, %106
-  %.reload13 = load volatile i32*, i32** %.reg2mem9, align 8
-  %115 = load i32, i32* %.reload13, align 4
-  %.reload33 = load volatile i32, i32* %.reg2mem32, align 4
-  %116 = xor i32 %.reload33, %115
-  %117 = trunc i32 %116 to i8
-  %.reload = load volatile i8**, i8*** %.reg2mem, align 8
-  %118 = load i8*, i8** %.reload, align 8
-  %.reload12 = load volatile i32*, i32** %.reg2mem9, align 8
-  %119 = load i32, i32* %.reload12, align 4
-  %120 = sext i32 %119 to i64
-  %121 = getelementptr inbounds i8, i8* %118, i64 %120
-  store i8 %117, i8* %121, align 1
-  %122 = load i32, i32* @x.21, align 4
-  %123 = load i32, i32* @y.22, align 4
-  %124 = icmp slt i32 %123, 10
-  %125 = add i32 %122, 1
-  %126 = mul i32 %125, %122
-  %127 = urem i32 %126, 2
-  %128 = icmp eq i32 %127, 0
-  %129 = or i1 %124, %128
-  br i1 %129, label %endBB35, label %bodyBB34cloneBB
-
-endBB35:                                          ; preds = %bodyBB34
-  br label %130
-
-130:                                              ; preds = %endBB35
-  %131 = load i32, i32* @x.23, align 4
-  %132 = load i32, i32* @y.24, align 4
-  %133 = icmp slt i32 %132, 10
-  %134 = add i32 %131, 1
-  %135 = mul i32 %134, %131
-  %136 = urem i32 %135, 2
-  %137 = icmp eq i32 %136, 0
-  %138 = or i1 %133, %137
-  br i1 %138, label %bodyBB36, label %bodyBB36cloneBB
-
-bodyBB36:                                         ; preds = %bodyBB36cloneBB, %130
-  %.reload11 = load volatile i32*, i32** %.reg2mem9, align 8
-  %139 = load i32, i32* %.reload11, align 4
-  %140 = add nsw i32 %139, 1
-  store i32 %140, i32* %.reg2mem38, align 4
-  %141 = load i32, i32* @x.25, align 4
-  %142 = load i32, i32* @y.26, align 4
-  %143 = icmp slt i32 %142, 10
-  %144 = add i32 %141, 1
-  %145 = mul i32 %144, %141
-  %146 = urem i32 %145, 2
-  %147 = icmp eq i32 %146, 0
-  %148 = or i1 %143, %147
-  br i1 %148, label %endBB37, label %bodyBB36cloneBB
+bodyBB36:                                         ; preds = %bodyBB36cloneBB, %82
+  %.reg2mem.reload = load volatile i32*, i32** %.reg2mem.reg2mem, align 8
+  %.reload = load volatile i32, i32* %.reg2mem.reload, align 4
+  %.reg2mem1.reload = load volatile i32*, i32** %.reg2mem1.reg2mem, align 8
+  %.reload2 = load volatile i32, i32* %.reg2mem1.reload, align 4
+  %91 = icmp slt i32 %.reload, %.reload2
+  store i1 %91, i1* %.reg2mem38, align 1
+  %x42 = alloca i32, align 4
+  %y43 = alloca i32, align 4
+  %92 = load i32, i32* %x42, align 4
+  %93 = load i32, i32* %y43, align 4
+  %94 = icmp slt i32 %93, 10
+  %95 = add i32 %92, 1
+  %96 = mul i32 %95, %92
+  %97 = urem i32 %96, 2
+  %98 = icmp eq i32 %97, 0
+  %99 = or i1 %94, %98
+  br i1 %99, label %endBB37, label %bodyBB36cloneBB
 
 endBB37:                                          ; preds = %bodyBB36
-  br label %149
+  br label %100
 
-149:                                              ; preds = %endBB37
-  %150 = load i32, i32* @x.27, align 4
-  %151 = load i32, i32* @y.28, align 4
-  %152 = icmp slt i32 %151, 10
-  %153 = add i32 %150, 1
-  %154 = mul i32 %153, %150
-  %155 = urem i32 %154, 2
-  %156 = icmp eq i32 %155, 0
-  %157 = or i1 %152, %156
-  br i1 %157, label %bodyBB40, label %bodyBB40cloneBB
+100:                                              ; preds = %endBB37
+  %.reload39 = load volatile i1, i1* %.reg2mem38, align 1
+  %101 = select i1 %.reload39, i32 1294384553, i32 1565216025
+  store i32 %101, i32* %swVar.ptr, align 4
+  br label %returnBB
 
-bodyBB40:                                         ; preds = %bodyBB40cloneBB, %149
-  %.reload10 = load volatile i32*, i32** %.reg2mem9, align 8
-  %.reload39 = load volatile i32, i32* %.reg2mem38, align 4
-  store i32 %.reload39, i32* %.reload10, align 4
-  %158 = load i32, i32* @x.29, align 4
-  %159 = load i32, i32* @y.30, align 4
-  %160 = icmp slt i32 %159, 10
-  %161 = add i32 %158, 1
-  %162 = mul i32 %161, %158
-  %163 = urem i32 %162, 2
-  %164 = icmp eq i32 %163, 0
-  %165 = or i1 %160, %164
-  br i1 %165, label %endBB41, label %bodyBB40cloneBB
+102:                                              ; preds = %24
+  %.reload10 = load volatile i8**, i8*** %.reg2mem9, align 8
+  %103 = load i8*, i8** %.reload10, align 8
+  %104 = load i32, i32* %23, align 4
+  %105 = sext i32 %104 to i64
+  %106 = getelementptr inbounds i8, i8* %103, i64 %105
+  %107 = load i8, i8* %106, align 1
+  %108 = sext i8 %107 to i32
+  br label %109
 
-endBB41:                                          ; preds = %bodyBB40
-  br label %43, !llvm.loop !4
+109:                                              ; preds = %102
+  %x46 = alloca i32, align 4
+  %y47 = alloca i32, align 4
+  %110 = load i32, i32* %x46, align 4
+  %111 = load i32, i32* %y47, align 4
+  %112 = icmp slt i32 %111, 10
+  %113 = add i32 %110, 1
+  %114 = mul i32 %113, %110
+  %115 = urem i32 %114, 2
+  %116 = icmp eq i32 %115, 0
+  %117 = or i1 %112, %116
+  br i1 %117, label %bodyBB44, label %bodyBB44cloneBB
 
-166:                                              ; preds = %endBB27
-  %167 = load i32, i32* @x.31, align 4
-  %168 = load i32, i32* @y.32, align 4
-  %169 = icmp slt i32 %168, 10
-  %170 = add i32 %167, 1
-  %171 = mul i32 %170, %167
-  %172 = urem i32 %171, 2
-  %173 = icmp eq i32 %172, 0
-  %174 = or i1 %169, %173
-  br i1 %174, label %bodyBB42, label %bodyBB42cloneBB
+bodyBB44:                                         ; preds = %bodyBB44cloneBB, %109
+  %118 = load i32, i32* %23, align 4
+  %119 = sub nsw i32 32, %118
+  %120 = add nsw i32 %108, %119
+  %.reg2mem3.reload2 = load volatile i32*, i32** %.reg2mem3.reg2mem, align 8
+  store i32 %120, i32* %.reg2mem3.reload2, align 4
+  store i32 393147266, i32* %swVar.ptr, align 4
+  %x48 = alloca i32, align 4
+  %y49 = alloca i32, align 4
+  %121 = load i32, i32* %x48, align 4
+  %122 = load i32, i32* %y49, align 4
+  %123 = icmp slt i32 %122, 10
+  %124 = add i32 %121, 1
+  %125 = mul i32 %124, %121
+  %126 = urem i32 %125, 2
+  %127 = icmp eq i32 %126, 0
+  %128 = or i1 %123, %127
+  br i1 %128, label %endBB45, label %bodyBB44cloneBB
 
-bodyBB42:                                         ; preds = %bodyBB42cloneBB, %166
-  %175 = load i32, i32* @x.33, align 4
-  %176 = load i32, i32* @y.34, align 4
-  %177 = icmp slt i32 %176, 10
-  %178 = add i32 %175, 1
-  %179 = mul i32 %178, %175
-  %180 = urem i32 %179, 2
-  %181 = icmp eq i32 %180, 0
-  %182 = or i1 %177, %181
-  br i1 %182, label %endBB43, label %bodyBB42cloneBB
+endBB45:                                          ; preds = %bodyBB44
+  br label %returnBB
 
-endBB43:                                          ; preds = %bodyBB42
+129:                                              ; preds = %24
+  %130 = load i32, i32* %23, align 4
+  %.reg2mem3.reload = load volatile i32*, i32** %.reg2mem3.reg2mem, align 8
+  %.reload4 = load volatile i32, i32* %.reg2mem3.reload, align 4
+  %131 = xor i32 %.reload4, %130
+  %132 = trunc i32 %131 to i8
+  %.reload7 = load volatile i8**, i8*** %.reg2mem6, align 8
+  %133 = load i8*, i8** %.reload7, align 8
+  %134 = load i32, i32* %23, align 4
+  br label %135
+
+135:                                              ; preds = %129
+  %x52 = alloca i32, align 4
+  %y53 = alloca i32, align 4
+  %136 = load i32, i32* %x52, align 4
+  %137 = load i32, i32* %y53, align 4
+  %138 = icmp slt i32 %137, 10
+  %139 = add i32 %136, 1
+  %140 = mul i32 %139, %136
+  %141 = urem i32 %140, 2
+  %142 = icmp eq i32 %141, 0
+  %143 = or i1 %138, %142
+  br i1 %143, label %bodyBB50, label %bodyBB50cloneBB
+
+bodyBB50:                                         ; preds = %bodyBB50cloneBB, %135
+  %144 = sext i32 %134 to i64
+  %145 = getelementptr inbounds i8, i8* %133, i64 %144
+  store i8 %132, i8* %145, align 1
+  store i32 340395374, i32* %swVar.ptr, align 4
+  %x54 = alloca i32, align 4
+  %y55 = alloca i32, align 4
+  %146 = load i32, i32* %x54, align 4
+  %147 = load i32, i32* %y55, align 4
+  %148 = icmp slt i32 %147, 10
+  %149 = add i32 %146, 1
+  %150 = mul i32 %149, %146
+  %151 = urem i32 %150, 2
+  %152 = icmp eq i32 %151, 0
+  %153 = or i1 %148, %152
+  br i1 %153, label %endBB51, label %bodyBB50cloneBB
+
+endBB51:                                          ; preds = %bodyBB50
+  br label %returnBB
+
+154:                                              ; preds = %24
+  %x58 = alloca i32, align 4
+  %y59 = alloca i32, align 4
+  %155 = load i32, i32* %x58, align 4
+  %156 = load i32, i32* %y59, align 4
+  %157 = icmp slt i32 %156, 10
+  %158 = add i32 %155, 1
+  %159 = mul i32 %158, %155
+  %160 = urem i32 %159, 2
+  %161 = icmp eq i32 %160, 0
+  %162 = or i1 %157, %161
+  br i1 %162, label %bodyBB56, label %bodyBB56cloneBB
+
+bodyBB56:                                         ; preds = %bodyBB56cloneBB, %154
+  %163 = load i32, i32* %23, align 4
+  %164 = add nsw i32 %163, 1
+  %.reg2mem5.reload1 = load volatile i32*, i32** %.reg2mem5.reg2mem, align 8
+  store i32 %164, i32* %.reg2mem5.reload1, align 4
+  %x60 = alloca i32, align 4
+  %y61 = alloca i32, align 4
+  %165 = load i32, i32* %x60, align 4
+  %166 = load i32, i32* %y61, align 4
+  %167 = icmp slt i32 %166, 10
+  %168 = add i32 %165, 1
+  %169 = mul i32 %168, %165
+  %170 = urem i32 %169, 2
+  %171 = icmp eq i32 %170, 0
+  %172 = or i1 %167, %171
+  br i1 %172, label %endBB57, label %bodyBB56cloneBB
+
+endBB57:                                          ; preds = %bodyBB56
+  br label %173
+
+173:                                              ; preds = %endBB57
+  store i32 1655559191, i32* %swVar.ptr, align 4
+  br label %returnBB
+
+174:                                              ; preds = %24
+  %.reg2mem5.reload = load volatile i32*, i32** %.reg2mem5.reg2mem, align 8
+  %.reload6 = load volatile i32, i32* %.reg2mem5.reload, align 4
+  store i32 %.reload6, i32* %23, align 4
+  br label %175
+
+175:                                              ; preds = %174
+  %x64 = alloca i32, align 4
+  %y65 = alloca i32, align 4
+  %176 = load i32, i32* %x64, align 4
+  %177 = load i32, i32* %y65, align 4
+  %178 = icmp slt i32 %177, 10
+  %179 = add i32 %176, 1
+  %180 = mul i32 %179, %176
+  %181 = urem i32 %180, 2
+  %182 = icmp eq i32 %181, 0
+  %183 = or i1 %178, %182
+  br i1 %183, label %bodyBB62, label %bodyBB62cloneBB
+
+bodyBB62:                                         ; preds = %bodyBB62cloneBB, %175
+  store i32 1501903019, i32* %swVar.ptr, align 4
+  %x66 = alloca i32, align 4
+  %y67 = alloca i32, align 4
+  %184 = load i32, i32* %x66, align 4
+  %185 = load i32, i32* %y67, align 4
+  %186 = icmp slt i32 %185, 10
+  %187 = add i32 %184, 1
+  %188 = mul i32 %187, %184
+  %189 = urem i32 %188, 2
+  %190 = icmp eq i32 %189, 0
+  %191 = or i1 %186, %190
+  br i1 %191, label %endBB63, label %bodyBB62cloneBB
+
+endBB63:                                          ; preds = %bodyBB62
+  br label %returnBB
+
+192:                                              ; preds = %24
+  %x70 = alloca i32, align 4
+  %y71 = alloca i32, align 4
+  %193 = load i32, i32* %x70, align 4
+  %194 = load i32, i32* %y71, align 4
+  %195 = icmp slt i32 %194, 10
+  %196 = add i32 %193, 1
+  %197 = mul i32 %196, %193
+  %198 = urem i32 %197, 2
+  %199 = icmp eq i32 %198, 0
+  %200 = or i1 %195, %199
+  br i1 %200, label %bodyBB68, label %bodyBB68cloneBB
+
+bodyBB68:                                         ; preds = %bodyBB68cloneBB, %192
+  %x72 = alloca i32, align 4
+  %y73 = alloca i32, align 4
+  %201 = load i32, i32* %x72, align 4
+  %202 = load i32, i32* %y73, align 4
+  %203 = icmp slt i32 %202, 10
+  %204 = add i32 %201, 1
+  %205 = mul i32 %204, %201
+  %206 = urem i32 %205, 2
+  %207 = icmp eq i32 %206, 0
+  %208 = or i1 %203, %207
+  br i1 %208, label %endBB69, label %bodyBB68cloneBB
+
+endBB69:                                          ; preds = %bodyBB68
   ret void
 
+returnBB:                                         ; preds = %endBB63, %173, %endBB51, %endBB45, %100, %endBB31, %61, %endBB19
+  %x76 = alloca i32, align 4
+  %y77 = alloca i32, align 4
+  %209 = load i32, i32* %x76, align 4
+  %210 = load i32, i32* %y77, align 4
+  %211 = icmp slt i32 %210, 10
+  %212 = add i32 %209, 1
+  %213 = mul i32 %212, %209
+  %214 = urem i32 %213, 2
+  %215 = icmp eq i32 %214, 0
+  %216 = or i1 %211, %215
+  br i1 %216, label %bodyBB74, label %bodyBB74cloneBB
+
+bodyBB74:                                         ; preds = %bodyBB74cloneBB, %returnBB
+  %x78 = alloca i32, align 4
+  %y79 = alloca i32, align 4
+  %217 = load i32, i32* %x78, align 4
+  %218 = load i32, i32* %y79, align 4
+  %219 = icmp slt i32 %218, 10
+  %220 = add i32 %217, 1
+  %221 = mul i32 %220, %217
+  %222 = urem i32 %221, 2
+  %223 = icmp eq i32 %222, 0
+  %224 = or i1 %219, %223
+  br i1 %224, label %endBB75, label %bodyBB74cloneBB
+
+endBB75:                                          ; preds = %bodyBB74
+  br label %dispatchBB
+
 bodyBBcloneBB:                                    ; preds = %bodyBB, %2
-  %183 = alloca i8*, align 8
-  store i8** %183, i8*** %.reg2mem, align 8
-  %184 = alloca i8*, align 8
-  store i8** %184, i8*** %.reg2mem2, align 8
-  %185 = alloca i32, align 4
-  store i32* %185, i32** %.reg2mem6, align 8
-  %186 = alloca i32, align 4
-  store i32* %186, i32** %.reg2mem9, align 8
-  %.reload1cloneBB = load volatile i8**, i8*** %.reg2mem, align 8
-  store i8* %0, i8** %.reload1cloneBB, align 8
-  %.reload5cloneBB = load volatile i8**, i8*** %.reg2mem2, align 8
-  store i8* %1, i8** %.reload5cloneBB, align 8
+  %.reg2mem5cloneBB = alloca i32, align 4
+  store i32* %.reg2mem5cloneBB, i32** %.reg2mem5.reg2mem, align 8
+  %.reg2mem3cloneBB = alloca i32, align 4
+  store i32* %.reg2mem3cloneBB, i32** %.reg2mem3.reg2mem, align 8
+  %.reg2mem1cloneBB = alloca i32, align 4
+  store i32* %.reg2mem1cloneBB, i32** %.reg2mem1.reg2mem, align 8
+  %.reg2memcloneBB = alloca i32, align 4
+  store i32* %.reg2memcloneBB, i32** %.reg2mem.reg2mem, align 8
+  %225 = alloca i8*, align 8
+  store i8** %225, i8*** %.reg2mem6, align 8
+  %226 = alloca i8*, align 8
+  store i8** %226, i8*** %.reg2mem9, align 8
+  %227 = alloca i32, align 4
+  store i32* %227, i32** %.reg2mem13, align 8
   br label %bodyBB
 
-bodyBB18cloneBB:                                  ; preds = %bodyBB18, %23
-  %.reload4cloneBB = load volatile i8**, i8*** %.reg2mem2, align 8
-  %187 = load i8*, i8** %.reload4cloneBB, align 8
-  %188 = call i64 @strlen(i8* %187) #5
-  %189 = trunc i64 %188 to i32
-  %.reload8cloneBB = load volatile i32*, i32** %.reg2mem6, align 8
-  store i32 %189, i32* %.reload8cloneBB, align 4
-  %.reload17cloneBB = load volatile i32*, i32** %.reg2mem9, align 8
-  store i32 0, i32* %.reload17cloneBB, align 4
+bodyBB18cloneBB:                                  ; preds = %bodyBB18, %swDefault
   br label %bodyBB18
 
-bodyBB20cloneBB:                                  ; preds = %bodyBB20, %43
-  %.reload16cloneBB = load volatile i32*, i32** %.reg2mem9, align 8
-  %190 = load i32, i32* %.reload16cloneBB, align 4
-  store i32 %190, i32* %.reg2mem22, align 4
-  %.reload7cloneBB = load volatile i32*, i32** %.reg2mem6, align 8
-  %191 = load i32, i32* %.reload7cloneBB, align 4
-  store i32 %191, i32* %.reg2mem24, align 4
-  br label %bodyBB20
+bodyBB24cloneBB:                                  ; preds = %bodyBB24, %41
+  %.reload11cloneBB = load volatile i8**, i8*** %.reg2mem9, align 8
+  %228 = load i8*, i8** %.reload11cloneBB, align 8
+  %229 = call i64 @strlen(i8* %228) #5
+  %230 = trunc i64 %229 to i32
+  %.reload15cloneBB = load volatile i32*, i32** %.reg2mem13, align 8
+  store i32 %230, i32* %.reload15cloneBB, align 4
+  br label %bodyBB24
 
-bodyBB26cloneBB:                                  ; preds = %bodyBB26, %62
-  %.reload23cloneBB = load volatile i32, i32* %.reg2mem22, align 4
-  %.reload25cloneBB = load volatile i32, i32* %.reg2mem24, align 4
-  %192 = icmp slt i32 %.reload23cloneBB, %.reload25cloneBB
-  store i1 %192, i1* %.reg2mem28, align 1
-  br label %bodyBB26
-
-bodyBB30cloneBB:                                  ; preds = %bodyBB30, %80
-  %.reload3cloneBB = load volatile i8**, i8*** %.reg2mem2, align 8
-  %193 = load i8*, i8** %.reload3cloneBB, align 8
-  %.reload15cloneBB = load volatile i32*, i32** %.reg2mem9, align 8
-  %194 = load i32, i32* %.reload15cloneBB, align 4
-  %195 = sext i32 %194 to i64
-  %196 = getelementptr inbounds i8, i8* %193, i64 %195
-  %197 = load i8, i8* %196, align 1
-  %198 = sext i8 %197 to i32
-  %.reload14cloneBB = load volatile i32*, i32** %.reg2mem9, align 8
-  %199 = load i32, i32* %.reload14cloneBB, align 4
-  %200 = sub nsw i32 32, %199
-  %201 = add nsw i32 %198, %200
-  store i32 %201, i32* %.reg2mem32, align 4
+bodyBB30cloneBB:                                  ; preds = %bodyBB30, %65
+  %.reg2mem1.reload3cloneBB = load volatile i32*, i32** %.reg2mem1.reg2mem, align 8
+  store i32 %64, i32* %.reg2mem1.reload3cloneBB, align 4
+  store i32 933088029, i32* %swVar.ptr, align 4
   br label %bodyBB30
 
-bodyBB34cloneBB:                                  ; preds = %bodyBB34, %106
-  %.reload13cloneBB = load volatile i32*, i32** %.reg2mem9, align 8
-  %202 = load i32, i32* %.reload13cloneBB, align 4
-  %.reload33cloneBB = load volatile i32, i32* %.reg2mem32, align 4
-  %203 = xor i32 %.reload33cloneBB, %202
-  %204 = trunc i32 %203 to i8
-  %.reloadcloneBB = load volatile i8**, i8*** %.reg2mem, align 8
-  %205 = load i8*, i8** %.reloadcloneBB, align 8
-  %.reload12cloneBB = load volatile i32*, i32** %.reg2mem9, align 8
-  %206 = load i32, i32* %.reload12cloneBB, align 4
-  %207 = sext i32 %206 to i64
-  %208 = getelementptr inbounds i8, i8* %205, i64 %207
-  store i8 %204, i8* %208, align 1
-  br label %bodyBB34
-
-bodyBB36cloneBB:                                  ; preds = %bodyBB36, %130
-  %.reload11cloneBB = load volatile i32*, i32** %.reg2mem9, align 8
-  %209 = load i32, i32* %.reload11cloneBB, align 4
-  %210 = add nsw i32 %209, 1
-  store i32 %210, i32* %.reg2mem38, align 4
+bodyBB36cloneBB:                                  ; preds = %bodyBB36, %82
+  %.reg2mem.reloadcloneBB = load volatile i32*, i32** %.reg2mem.reg2mem, align 8
+  %.reloadcloneBB = load volatile i32, i32* %.reg2mem.reloadcloneBB, align 4
+  %.reg2mem1.reloadcloneBB = load volatile i32*, i32** %.reg2mem1.reg2mem, align 8
+  %.reload2cloneBB = load volatile i32, i32* %.reg2mem1.reloadcloneBB, align 4
+  %231 = icmp slt i32 %.reloadcloneBB, %.reload2cloneBB
+  store i1 %231, i1* %.reg2mem38, align 1
   br label %bodyBB36
 
-bodyBB40cloneBB:                                  ; preds = %bodyBB40, %149
-  %.reload10cloneBB = load volatile i32*, i32** %.reg2mem9, align 8
-  %.reload39cloneBB = load volatile i32, i32* %.reg2mem38, align 4
-  store i32 %.reload39cloneBB, i32* %.reload10cloneBB, align 4
-  br label %bodyBB40
+bodyBB44cloneBB:                                  ; preds = %bodyBB44, %109
+  %232 = load i32, i32* %23, align 4
+  %233 = sub nsw i32 32, %232
+  %234 = add nsw i32 %108, %233
+  %.reg2mem3.reload2cloneBB = load volatile i32*, i32** %.reg2mem3.reg2mem, align 8
+  store i32 %234, i32* %.reg2mem3.reload2cloneBB, align 4
+  store i32 393147266, i32* %swVar.ptr, align 4
+  br label %bodyBB44
 
-bodyBB42cloneBB:                                  ; preds = %bodyBB42, %166
-  br label %bodyBB42
+bodyBB50cloneBB:                                  ; preds = %bodyBB50, %135
+  %235 = sext i32 %134 to i64
+  %236 = getelementptr inbounds i8, i8* %133, i64 %235
+  store i8 %132, i8* %236, align 1
+  store i32 340395374, i32* %swVar.ptr, align 4
+  br label %bodyBB50
+
+bodyBB56cloneBB:                                  ; preds = %bodyBB56, %154
+  %237 = load i32, i32* %23, align 4
+  %238 = add nsw i32 %237, 1
+  %.reg2mem5.reload1cloneBB = load volatile i32*, i32** %.reg2mem5.reg2mem, align 8
+  store i32 %238, i32* %.reg2mem5.reload1cloneBB, align 4
+  br label %bodyBB56
+
+bodyBB62cloneBB:                                  ; preds = %bodyBB62, %175
+  store i32 1501903019, i32* %swVar.ptr, align 4
+  br label %bodyBB62
+
+bodyBB68cloneBB:                                  ; preds = %bodyBB68, %192
+  br label %bodyBB68
+
+bodyBB74cloneBB:                                  ; preds = %bodyBB74, %returnBB
+  br label %bodyBB74
 }
 
 ; Function Attrs: nounwind readonly willreturn
@@ -500,570 +542,849 @@ declare dso_local i64 @strlen(i8*) #1
 
 ; Function Attrs: mustprogress noinline norecurse optnone uwtable
 define dso_local i32 @main(i32 %0, i8** %1) #2 {
-  %.reload53.reg2mem = alloca i32, align 4
-  %.reg2mem52 = alloca i32, align 4
-  %.reg2mem40 = alloca i1, align 1
-  %.reg2mem36 = alloca i1, align 1
-  %.reg2mem32 = alloca i1, align 1
-  %.reg2mem28 = alloca i1, align 1
-  %.reg2mem18 = alloca i1, align 1
-  %.reg2mem13 = alloca i8*, align 8
-  %.reg2mem9 = alloca [100 x i8]*, align 8
-  %.reg2mem6 = alloca i8***, align 8
-  %.reg2mem3 = alloca i32*, align 8
-  %.reg2mem = alloca i32*, align 8
-  %3 = load i32, i32* @x.35, align 4
-  %4 = load i32, i32* @y.36, align 4
-  %5 = icmp slt i32 %4, 10
-  %6 = add i32 %3, 1
-  %7 = mul i32 %6, %3
-  %8 = urem i32 %7, 2
-  %9 = icmp eq i32 %8, 0
-  %10 = or i1 %5, %9
-  br i1 %10, label %bodyBB, label %bodyBBcloneBB
+  %.reg2mem70 = alloca i1, align 1
+  %.reg2mem32 = alloca i32, align 4
+  %.reg2mem.reg2mem = alloca i1*, align 8
+  %swVar.ptr.reg2mem = alloca i32*, align 8
+  %.reg2mem2 = alloca i8*, align 8
+  %.reg2mem3 = alloca i32, align 4
+  %.reg2mem1 = alloca i1, align 1
+  %3 = alloca i32, align 4
+  %4 = alloca i32, align 4
+  %5 = alloca i8**, align 8
+  %6 = alloca [100 x i8], align 16
+  br label %7
 
-bodyBB:                                           ; preds = %bodyBBcloneBB, %2
-  %11 = alloca i32, align 4
-  store i32* %11, i32** %.reg2mem, align 8
-  %12 = alloca i32, align 4
-  store i32* %12, i32** %.reg2mem3, align 8
-  %13 = alloca i8**, align 8
-  store i8*** %13, i8**** %.reg2mem6, align 8
-  %14 = alloca [100 x i8], align 16
-  store [100 x i8]* %14, [100 x i8]** %.reg2mem9, align 8
-  %15 = alloca i8, align 1
-  store i8* %15, i8** %.reg2mem13, align 8
-  %.reload2 = load volatile i32*, i32** %.reg2mem, align 8
-  store i32 0, i32* %.reload2, align 4
-  %16 = load i32, i32* @x.37, align 4
-  %17 = load i32, i32* @y.38, align 4
-  %18 = icmp slt i32 %17, 10
-  %19 = add i32 %16, 1
-  %20 = mul i32 %19, %16
-  %21 = urem i32 %20, 2
-  %22 = icmp eq i32 %21, 0
-  %23 = or i1 %18, %22
-  br i1 %23, label %endBB, label %bodyBBcloneBB
+7:                                                ; preds = %2
+  %x = alloca i32, align 4
+  %y = alloca i32, align 4
+  %8 = load i32, i32* %x, align 4
+  %9 = load i32, i32* %y, align 4
+  %10 = icmp slt i32 %9, 10
+  %11 = add i32 %8, 1
+  %12 = mul i32 %11, %8
+  %13 = urem i32 %12, 2
+  %14 = icmp eq i32 %13, 0
+  %15 = or i1 %10, %14
+  br i1 %15, label %bodyBB, label %bodyBBcloneBB
+
+bodyBB:                                           ; preds = %bodyBBcloneBB, %7
+  %16 = alloca i8, align 1
+  store i8* %16, i8** %.reg2mem2, align 8
+  store i32 0, i32* %3, align 4
+  %swVar.ptr = alloca i32, align 4
+  store i32* %swVar.ptr, i32** %swVar.ptr.reg2mem, align 8
+  %swVar.ptr.reload19 = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 985482766, i32* %swVar.ptr.reload19, align 4
+  %.reg2mem = alloca i1, align 1
+  store i1* %.reg2mem, i1** %.reg2mem.reg2mem, align 8
+  %x22 = alloca i32, align 4
+  %y23 = alloca i32, align 4
+  %17 = load i32, i32* %x22, align 4
+  %18 = load i32, i32* %y23, align 4
+  %19 = icmp slt i32 %18, 10
+  %20 = add i32 %17, 1
+  %21 = mul i32 %20, %17
+  %22 = urem i32 %21, 2
+  %23 = icmp eq i32 %22, 0
+  %24 = or i1 %19, %23
+  br i1 %24, label %endBB, label %bodyBBcloneBB
 
 endBB:                                            ; preds = %bodyBB
-  br label %24
+  br label %dispatchBB
 
-24:                                               ; preds = %endBB
-  %25 = load i32, i32* @x.39, align 4
-  %26 = load i32, i32* @y.40, align 4
-  %27 = icmp slt i32 %26, 10
-  %28 = add i32 %25, 1
-  %29 = mul i32 %28, %25
-  %30 = urem i32 %29, 2
-  %31 = icmp eq i32 %30, 0
-  %32 = or i1 %27, %31
-  br i1 %32, label %bodyBB16, label %bodyBB16cloneBB
+dispatchBB:                                       ; preds = %endBB137, %endBB
+  %swVar.ptr.reload18 = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  %swVar = load i32, i32* %swVar.ptr.reload18, align 4
+  br label %25
 
-bodyBB16:                                         ; preds = %bodyBB16cloneBB, %24
-  %.reload5 = load volatile i32*, i32** %.reg2mem3, align 8
-  store i32 %0, i32* %.reload5, align 4
-  %.reload8 = load volatile i8***, i8**** %.reg2mem6, align 8
-  store i8** %1, i8*** %.reload8, align 8
-  %33 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str, i64 0, i64 0))
-  %.reload4 = load volatile i32*, i32** %.reg2mem3, align 8
-  %34 = load i32, i32* %.reload4, align 4
-  %35 = icmp sle i32 %34, 1
-  store i1 %35, i1* %.reg2mem18, align 1
-  %36 = load i32, i32* @x.41, align 4
-  %37 = load i32, i32* @y.42, align 4
-  %38 = icmp slt i32 %37, 10
-  %39 = add i32 %36, 1
-  %40 = mul i32 %39, %36
-  %41 = urem i32 %40, 2
-  %42 = icmp eq i32 %41, 0
-  %43 = or i1 %38, %42
-  br i1 %43, label %endBB17, label %bodyBB16cloneBB
+25:                                               ; preds = %dispatchBB
+  %x26 = alloca i32, align 4
+  %y27 = alloca i32, align 4
+  %26 = load i32, i32* %x26, align 4
+  %27 = load i32, i32* %y27, align 4
+  %28 = icmp slt i32 %27, 10
+  %29 = add i32 %26, 1
+  %30 = mul i32 %29, %26
+  %31 = urem i32 %30, 2
+  %32 = icmp eq i32 %31, 0
+  %33 = or i1 %28, %32
+  br i1 %33, label %bodyBB24, label %bodyBB24cloneBB
 
-endBB17:                                          ; preds = %bodyBB16
-  %.reload19 = load volatile i1, i1* %.reg2mem18, align 1
-  br i1 %.reload19, label %44, label %79
-
-44:                                               ; preds = %endBB17
-  %45 = load i32, i32* @x.43, align 4
-  %46 = load i32, i32* @y.44, align 4
-  %47 = icmp slt i32 %46, 10
-  %48 = add i32 %45, 1
-  %49 = mul i32 %48, %45
-  %50 = urem i32 %49, 2
-  %51 = icmp eq i32 %50, 0
-  %52 = or i1 %47, %51
-  br i1 %52, label %bodyBB20, label %bodyBB20cloneBB
-
-bodyBB20:                                         ; preds = %bodyBB20cloneBB, %44
-  %53 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([33 x i8], [33 x i8]* @.str.1, i64 0, i64 0))
-  %.reload1 = load volatile i32*, i32** %.reg2mem, align 8
-  store i32 0, i32* %.reload1, align 4
-  %54 = load i32, i32* @x.45, align 4
-  %55 = load i32, i32* @y.46, align 4
-  %56 = icmp slt i32 %55, 10
-  %57 = add i32 %54, 1
-  %58 = mul i32 %57, %54
-  %59 = urem i32 %58, 2
-  %60 = icmp eq i32 %59, 0
-  %61 = or i1 %56, %60
-  br i1 %61, label %endBB21, label %bodyBB20cloneBB
-
-endBB21:                                          ; preds = %bodyBB20
-  br label %62
-
-62:                                               ; preds = %endBB21
-  %63 = load i32, i32* @x.47, align 4
-  %64 = load i32, i32* @y.48, align 4
-  %65 = icmp slt i32 %64, 10
-  %66 = add i32 %63, 1
-  %67 = mul i32 %66, %63
-  %68 = urem i32 %67, 2
-  %69 = icmp eq i32 %68, 0
-  %70 = or i1 %65, %69
-  br i1 %70, label %bodyBB22, label %bodyBB22cloneBB
-
-bodyBB22:                                         ; preds = %bodyBB22cloneBB, %62
-  %71 = load i32, i32* @x.49, align 4
-  %72 = load i32, i32* @y.50, align 4
-  %73 = icmp slt i32 %72, 10
-  %74 = add i32 %71, 1
-  %75 = mul i32 %74, %71
-  %76 = urem i32 %75, 2
-  %77 = icmp eq i32 %76, 0
-  %78 = or i1 %73, %77
-  br i1 %78, label %endBB23, label %bodyBB22cloneBB
-
-endBB23:                                          ; preds = %bodyBB22
-  br label %253
-
-79:                                               ; preds = %endBB17
-  %80 = load i32, i32* @x.51, align 4
-  %81 = load i32, i32* @y.52, align 4
-  %82 = icmp slt i32 %81, 10
-  %83 = add i32 %80, 1
-  %84 = mul i32 %83, %80
-  %85 = urem i32 %84, 2
-  %86 = icmp eq i32 %85, 0
-  %87 = or i1 %82, %86
-  br i1 %87, label %bodyBB24, label %bodyBB24cloneBB
-
-bodyBB24:                                         ; preds = %bodyBB24cloneBB, %79
-  %.reload7 = load volatile i8***, i8**** %.reg2mem6, align 8
-  %88 = load i8**, i8*** %.reload7, align 8
-  %89 = getelementptr inbounds i8*, i8** %88, i64 1
-  %90 = load i8*, i8** %89, align 8
-  store i8* %90, i8** @input, align 8
-  %91 = load i8*, i8** @input, align 8
-  %92 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.2, i64 0, i64 0), i8* %91)
-  %.reload12 = load volatile [100 x i8]*, [100 x i8]** %.reg2mem9, align 8
-  %93 = bitcast [100 x i8]* %.reload12 to i8*
-  call void @llvm.memset.p0i8.i64(i8* align 16 %93, i8 0, i64 100, i1 false)
-  %94 = load i32, i32* @x.53, align 4
-  %95 = load i32, i32* @y.54, align 4
-  %96 = icmp slt i32 %95, 10
-  %97 = add i32 %94, 1
-  %98 = mul i32 %97, %94
-  %99 = urem i32 %98, 2
-  %100 = icmp eq i32 %99, 0
-  %101 = or i1 %96, %100
-  br i1 %101, label %endBB25, label %bodyBB24cloneBB
+bodyBB24:                                         ; preds = %bodyBB24cloneBB, %25
+  %x28 = alloca i32, align 4
+  %y29 = alloca i32, align 4
+  %34 = load i32, i32* %x28, align 4
+  %35 = load i32, i32* %y29, align 4
+  %36 = icmp slt i32 %35, 10
+  %37 = add i32 %34, 1
+  %38 = mul i32 %37, %34
+  %39 = urem i32 %38, 2
+  %40 = icmp eq i32 %39, 0
+  %41 = or i1 %36, %40
+  br i1 %41, label %endBB25, label %bodyBB24cloneBB
 
 endBB25:                                          ; preds = %bodyBB24
-  br label %102
+  switch i32 %swVar, label %swDefault [
+    i32 985482766, label %42
+    i32 1627599739, label %64
+    i32 2123708365, label %99
+    i32 36572832, label %117
+    i32 1064663363, label %141
+    i32 2019953326, label %165
+    i32 1668432026, label %202
+    i32 260774751, label %221
+    i32 476268099, label %227
+    i32 2044819374, label %246
+    i32 1363136928, label %280
+    i32 1836996258, label %315
+    i32 820807999, label %333
+    i32 1588063422, label %352
+  ]
 
-102:                                              ; preds = %endBB25
-  %103 = load i32, i32* @x.55, align 4
-  %104 = load i32, i32* @y.56, align 4
-  %105 = icmp slt i32 %104, 10
-  %106 = add i32 %103, 1
-  %107 = mul i32 %106, %103
-  %108 = urem i32 %107, 2
-  %109 = icmp eq i32 %108, 0
-  %110 = or i1 %105, %109
-  br i1 %110, label %bodyBB26, label %bodyBB26cloneBB
+swDefault:                                        ; preds = %endBB25
+  br label %returnBB
 
-bodyBB26:                                         ; preds = %bodyBB26cloneBB, %102
-  %.reload11 = load volatile [100 x i8]*, [100 x i8]** %.reg2mem9, align 8
-  %111 = getelementptr inbounds [100 x i8], [100 x i8]* %.reload11, i64 0, i64 0
-  %112 = load i8*, i8** @input, align 8
-  call void @_Z7encryptPhPc(i8* %111, i8* %112)
-  %113 = load i8*, i8** @input, align 8
-  %114 = call i64 @strlen(i8* %113) #5
-  %115 = icmp eq i64 %114, 22
-  store i1 %115, i1* %.reg2mem28, align 1
-  %116 = load i32, i32* @x.57, align 4
-  %117 = load i32, i32* @y.58, align 4
-  %118 = icmp slt i32 %117, 10
-  %119 = add i32 %116, 1
-  %120 = mul i32 %119, %116
-  %121 = urem i32 %120, 2
-  %122 = icmp eq i32 %121, 0
-  %123 = or i1 %118, %122
-  br i1 %123, label %endBB27, label %bodyBB26cloneBB
+42:                                               ; preds = %endBB25
+  %x34 = alloca i32, align 4
+  %y35 = alloca i32, align 4
+  %43 = load i32, i32* %x34, align 4
+  %44 = load i32, i32* %y35, align 4
+  %45 = icmp slt i32 %44, 10
+  %46 = add i32 %43, 1
+  %47 = mul i32 %46, %43
+  %48 = urem i32 %47, 2
+  %49 = icmp eq i32 %48, 0
+  %50 = or i1 %45, %49
+  br i1 %50, label %bodyBB30, label %bodyBB30cloneBB
 
-endBB27:                                          ; preds = %bodyBB26
-  %.reload29 = load volatile i1, i1* %.reg2mem28, align 1
-  br i1 %.reload29, label %124, label %162
-
-124:                                              ; preds = %endBB27
-  %125 = load i32, i32* @x.59, align 4
-  %126 = load i32, i32* @y.60, align 4
-  %127 = icmp slt i32 %126, 10
-  %128 = add i32 %125, 1
-  %129 = mul i32 %128, %125
-  %130 = urem i32 %129, 2
-  %131 = icmp eq i32 %130, 0
-  %132 = or i1 %127, %131
-  br i1 %132, label %bodyBB30, label %bodyBB30cloneBB
-
-bodyBB30:                                         ; preds = %bodyBB30cloneBB, %124
-  %.reload10 = load volatile [100 x i8]*, [100 x i8]** %.reg2mem9, align 8
-  %133 = getelementptr inbounds [100 x i8], [100 x i8]* %.reload10, i64 0, i64 0
-  %134 = call i32 @memcmp(i8* %133, i8* getelementptr inbounds ([100 x i8], [100 x i8]* bitcast (<{ [22 x i8], [78 x i8] }>* @enc to [100 x i8]*), i64 0, i64 0), i64 22) #5
-  %135 = icmp ne i32 %134, 0
-  store i1 %135, i1* %.reg2mem32, align 1
-  %136 = load i32, i32* @x.61, align 4
-  %137 = load i32, i32* @y.62, align 4
-  %138 = icmp slt i32 %137, 10
-  %139 = add i32 %136, 1
-  %140 = mul i32 %139, %136
-  %141 = urem i32 %140, 2
-  %142 = icmp eq i32 %141, 0
-  %143 = or i1 %138, %142
-  br i1 %143, label %endBB31, label %bodyBB30cloneBB
+bodyBB30:                                         ; preds = %bodyBB30cloneBB, %42
+  store i32 %0, i32* %4, align 4
+  store i8** %1, i8*** %5, align 8
+  %51 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str, i64 0, i64 0))
+  %52 = load i32, i32* %4, align 4
+  store i32 %52, i32* %.reg2mem32, align 4
+  %x36 = alloca i32, align 4
+  %y37 = alloca i32, align 4
+  %53 = load i32, i32* %x36, align 4
+  %54 = load i32, i32* %y37, align 4
+  %55 = icmp slt i32 %54, 10
+  %56 = add i32 %53, 1
+  %57 = mul i32 %56, %53
+  %58 = urem i32 %57, 2
+  %59 = icmp eq i32 %58, 0
+  %60 = or i1 %55, %59
+  br i1 %60, label %endBB31, label %bodyBB30cloneBB
 
 endBB31:                                          ; preds = %bodyBB30
-  br label %144
+  br label %61
 
-144:                                              ; preds = %endBB31
-  %145 = load i32, i32* @x.63, align 4
-  %146 = load i32, i32* @y.64, align 4
-  %147 = icmp slt i32 %146, 10
-  %148 = add i32 %145, 1
-  %149 = mul i32 %148, %145
-  %150 = urem i32 %149, 2
-  %151 = icmp eq i32 %150, 0
-  %152 = or i1 %147, %151
-  br i1 %152, label %bodyBB34, label %bodyBB34cloneBB
+61:                                               ; preds = %endBB31
+  %.reload33 = load volatile i32, i32* %.reg2mem32, align 4
+  %62 = icmp sle i32 %.reload33, 1
+  %63 = select i1 %62, i32 1627599739, i32 36572832
+  %swVar.ptr.reload17 = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 %63, i32* %swVar.ptr.reload17, align 4
+  br label %returnBB
 
-bodyBB34:                                         ; preds = %bodyBB34cloneBB, %144
-  %.reload33 = load volatile i1, i1* %.reg2mem32, align 1
-  %153 = xor i1 %.reload33, true
-  store i1 %153, i1* %.reg2mem36, align 1
-  %154 = load i32, i32* @x.65, align 4
-  %155 = load i32, i32* @y.66, align 4
-  %156 = icmp slt i32 %155, 10
-  %157 = add i32 %154, 1
-  %158 = mul i32 %157, %154
-  %159 = urem i32 %158, 2
-  %160 = icmp eq i32 %159, 0
-  %161 = or i1 %156, %160
-  br i1 %161, label %endBB35, label %bodyBB34cloneBB
+64:                                               ; preds = %endBB25
+  %x40 = alloca i32, align 4
+  %y41 = alloca i32, align 4
+  %65 = load i32, i32* %x40, align 4
+  %66 = load i32, i32* %y41, align 4
+  %67 = icmp slt i32 %66, 10
+  %68 = add i32 %65, 1
+  %69 = mul i32 %68, %65
+  %70 = urem i32 %69, 2
+  %71 = icmp eq i32 %70, 0
+  %72 = or i1 %67, %71
+  br i1 %72, label %bodyBB38, label %bodyBB38cloneBB
 
-endBB35:                                          ; preds = %bodyBB34
-  %.reload37 = load volatile i1, i1* %.reg2mem36, align 1
-  br label %162
-
-162:                                              ; preds = %endBB35, %endBB27
-  %163 = phi i1 [ false, %endBB27 ], [ %.reload37, %endBB35 ]
-  %164 = load i32, i32* @x.67, align 4
-  %165 = load i32, i32* @y.68, align 4
-  %166 = icmp slt i32 %165, 10
-  %167 = add i32 %164, 1
-  %168 = mul i32 %167, %164
-  %169 = urem i32 %168, 2
-  %170 = icmp eq i32 %169, 0
-  %171 = or i1 %166, %170
-  br i1 %171, label %bodyBB38, label %bodyBB38cloneBB
-
-bodyBB38:                                         ; preds = %bodyBB38cloneBB, %162
-  %172 = zext i1 %163 to i8
-  %.reload15 = load volatile i8*, i8** %.reg2mem13, align 8
-  store i8 %172, i8* %.reload15, align 1
-  %.reload14 = load volatile i8*, i8** %.reg2mem13, align 8
-  %173 = load i8, i8* %.reload14, align 1
-  %174 = trunc i8 %173 to i1
-  store i1 %174, i1* %.reg2mem40, align 1
-  %175 = load i32, i32* @x.69, align 4
-  %176 = load i32, i32* @y.70, align 4
-  %177 = icmp slt i32 %176, 10
-  %178 = add i32 %175, 1
-  %179 = mul i32 %178, %175
-  %180 = urem i32 %179, 2
-  %181 = icmp eq i32 %180, 0
-  %182 = or i1 %177, %181
-  br i1 %182, label %endBB39, label %bodyBB38cloneBB
+bodyBB38:                                         ; preds = %bodyBB38cloneBB, %64
+  %73 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([33 x i8], [33 x i8]* @.str.1, i64 0, i64 0))
+  store i32 0, i32* %3, align 4
+  %x42 = alloca i32, align 4
+  %y43 = alloca i32, align 4
+  %74 = load i32, i32* %x42, align 4
+  %75 = load i32, i32* %y43, align 4
+  %76 = icmp slt i32 %75, 10
+  %77 = add i32 %74, 1
+  %78 = mul i32 %77, %74
+  %79 = urem i32 %78, 2
+  %80 = icmp eq i32 %79, 0
+  %81 = or i1 %76, %80
+  br i1 %81, label %endBB39, label %bodyBB38cloneBB
 
 endBB39:                                          ; preds = %bodyBB38
-  %.reload41 = load volatile i1, i1* %.reg2mem40, align 1
-  br i1 %.reload41, label %183, label %218
+  br label %82
 
-183:                                              ; preds = %endBB39
-  %184 = load i32, i32* @x.71, align 4
-  %185 = load i32, i32* @y.72, align 4
-  %186 = icmp slt i32 %185, 10
-  %187 = add i32 %184, 1
-  %188 = mul i32 %187, %184
-  %189 = urem i32 %188, 2
-  %190 = icmp eq i32 %189, 0
-  %191 = or i1 %186, %190
-  br i1 %191, label %bodyBB42, label %bodyBB42cloneBB
+82:                                               ; preds = %endBB39
+  %x46 = alloca i32, align 4
+  %y47 = alloca i32, align 4
+  %83 = load i32, i32* %x46, align 4
+  %84 = load i32, i32* %y47, align 4
+  %85 = icmp slt i32 %84, 10
+  %86 = add i32 %83, 1
+  %87 = mul i32 %86, %83
+  %88 = urem i32 %87, 2
+  %89 = icmp eq i32 %88, 0
+  %90 = or i1 %85, %89
+  br i1 %90, label %bodyBB44, label %bodyBB44cloneBB
 
-bodyBB42:                                         ; preds = %bodyBB42cloneBB, %183
-  %192 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.3, i64 0, i64 0))
-  %193 = load i32, i32* @x.73, align 4
-  %194 = load i32, i32* @y.74, align 4
-  %195 = icmp slt i32 %194, 10
-  %196 = add i32 %193, 1
-  %197 = mul i32 %196, %193
-  %198 = urem i32 %197, 2
-  %199 = icmp eq i32 %198, 0
-  %200 = or i1 %195, %199
-  br i1 %200, label %endBB43, label %bodyBB42cloneBB
-
-endBB43:                                          ; preds = %bodyBB42
-  br label %201
-
-201:                                              ; preds = %endBB43
-  %202 = load i32, i32* @x.75, align 4
-  %203 = load i32, i32* @y.76, align 4
-  %204 = icmp slt i32 %203, 10
-  %205 = add i32 %202, 1
-  %206 = mul i32 %205, %202
-  %207 = urem i32 %206, 2
-  %208 = icmp eq i32 %207, 0
-  %209 = or i1 %204, %208
-  br i1 %209, label %bodyBB44, label %bodyBB44cloneBB
-
-bodyBB44:                                         ; preds = %bodyBB44cloneBB, %201
-  %210 = load i32, i32* @x.77, align 4
-  %211 = load i32, i32* @y.78, align 4
-  %212 = icmp slt i32 %211, 10
-  %213 = add i32 %210, 1
-  %214 = mul i32 %213, %210
-  %215 = urem i32 %214, 2
-  %216 = icmp eq i32 %215, 0
-  %217 = or i1 %212, %216
-  br i1 %217, label %endBB45, label %bodyBB44cloneBB
+bodyBB44:                                         ; preds = %bodyBB44cloneBB, %82
+  %swVar.ptr.reload16 = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 2123708365, i32* %swVar.ptr.reload16, align 4
+  %x48 = alloca i32, align 4
+  %y49 = alloca i32, align 4
+  %91 = load i32, i32* %x48, align 4
+  %92 = load i32, i32* %y49, align 4
+  %93 = icmp slt i32 %92, 10
+  %94 = add i32 %91, 1
+  %95 = mul i32 %94, %91
+  %96 = urem i32 %95, 2
+  %97 = icmp eq i32 %96, 0
+  %98 = or i1 %93, %97
+  br i1 %98, label %endBB45, label %bodyBB44cloneBB
 
 endBB45:                                          ; preds = %bodyBB44
-  br label %253
+  br label %returnBB
 
-218:                                              ; preds = %endBB39
-  %219 = load i32, i32* @x.79, align 4
-  %220 = load i32, i32* @y.80, align 4
-  %221 = icmp slt i32 %220, 10
-  %222 = add i32 %219, 1
-  %223 = mul i32 %222, %219
-  %224 = urem i32 %223, 2
-  %225 = icmp eq i32 %224, 0
-  %226 = or i1 %221, %225
-  br i1 %226, label %bodyBB46, label %bodyBB46cloneBB
+99:                                               ; preds = %endBB25
+  %swVar.ptr.reload15 = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 820807999, i32* %swVar.ptr.reload15, align 4
+  br label %100
 
-bodyBB46:                                         ; preds = %bodyBB46cloneBB, %218
-  %227 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.4, i64 0, i64 0))
-  %228 = load i32, i32* @x.81, align 4
-  %229 = load i32, i32* @y.82, align 4
+100:                                              ; preds = %99
+  %x52 = alloca i32, align 4
+  %y53 = alloca i32, align 4
+  %101 = load i32, i32* %x52, align 4
+  %102 = load i32, i32* %y53, align 4
+  %103 = icmp slt i32 %102, 10
+  %104 = add i32 %101, 1
+  %105 = mul i32 %104, %101
+  %106 = urem i32 %105, 2
+  %107 = icmp eq i32 %106, 0
+  %108 = or i1 %103, %107
+  br i1 %108, label %bodyBB50, label %bodyBB50cloneBB
+
+bodyBB50:                                         ; preds = %bodyBB50cloneBB, %100
+  %x54 = alloca i32, align 4
+  %y55 = alloca i32, align 4
+  %109 = load i32, i32* %x54, align 4
+  %110 = load i32, i32* %y55, align 4
+  %111 = icmp slt i32 %110, 10
+  %112 = add i32 %109, 1
+  %113 = mul i32 %112, %109
+  %114 = urem i32 %113, 2
+  %115 = icmp eq i32 %114, 0
+  %116 = or i1 %111, %115
+  br i1 %116, label %endBB51, label %bodyBB50cloneBB
+
+endBB51:                                          ; preds = %bodyBB50
+  br label %returnBB
+
+117:                                              ; preds = %endBB25
+  %118 = load i8**, i8*** %5, align 8
+  %119 = getelementptr inbounds i8*, i8** %118, i64 1
+  %120 = load i8*, i8** %119, align 8
+  store i8* %120, i8** @input, align 8
+  %121 = load i8*, i8** @input, align 8
+  br label %122
+
+122:                                              ; preds = %117
+  %x58 = alloca i32, align 4
+  %y59 = alloca i32, align 4
+  %123 = load i32, i32* %x58, align 4
+  %124 = load i32, i32* %y59, align 4
+  %125 = icmp slt i32 %124, 10
+  %126 = add i32 %123, 1
+  %127 = mul i32 %126, %123
+  %128 = urem i32 %127, 2
+  %129 = icmp eq i32 %128, 0
+  %130 = or i1 %125, %129
+  br i1 %130, label %bodyBB56, label %bodyBB56cloneBB
+
+bodyBB56:                                         ; preds = %bodyBB56cloneBB, %122
+  %131 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.2, i64 0, i64 0), i8* %121)
+  %132 = bitcast [100 x i8]* %6 to i8*
+  call void @llvm.memset.p0i8.i64(i8* align 16 %132, i8 0, i64 100, i1 false)
+  %swVar.ptr.reload14 = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 1064663363, i32* %swVar.ptr.reload14, align 4
+  %x60 = alloca i32, align 4
+  %y61 = alloca i32, align 4
+  %133 = load i32, i32* %x60, align 4
+  %134 = load i32, i32* %y61, align 4
+  %135 = icmp slt i32 %134, 10
+  %136 = add i32 %133, 1
+  %137 = mul i32 %136, %133
+  %138 = urem i32 %137, 2
+  %139 = icmp eq i32 %138, 0
+  %140 = or i1 %135, %139
+  br i1 %140, label %endBB57, label %bodyBB56cloneBB
+
+endBB57:                                          ; preds = %bodyBB56
+  br label %returnBB
+
+141:                                              ; preds = %endBB25
+  %142 = getelementptr inbounds [100 x i8], [100 x i8]* %6, i64 0, i64 0
+  %143 = load i8*, i8** @input, align 8
+  call void @_Z7encryptPhPc(i8* %142, i8* %143)
+  %144 = load i8*, i8** @input, align 8
+  %145 = call i64 @strlen(i8* %144) #5
+  br label %146
+
+146:                                              ; preds = %141
+  %x64 = alloca i32, align 4
+  %y65 = alloca i32, align 4
+  %147 = load i32, i32* %x64, align 4
+  %148 = load i32, i32* %y65, align 4
+  %149 = icmp slt i32 %148, 10
+  %150 = add i32 %147, 1
+  %151 = mul i32 %150, %147
+  %152 = urem i32 %151, 2
+  %153 = icmp eq i32 %152, 0
+  %154 = or i1 %149, %153
+  br i1 %154, label %bodyBB62, label %bodyBB62cloneBB
+
+bodyBB62:                                         ; preds = %bodyBB62cloneBB, %146
+  %155 = icmp eq i64 %145, 22
+  %156 = select i1 %155, i32 2019953326, i32 260774751
+  %swVar.ptr.reload13 = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 %156, i32* %swVar.ptr.reload13, align 4
+  %.reg2mem.reload21 = load volatile i1*, i1** %.reg2mem.reg2mem, align 8
+  store i1 false, i1* %.reg2mem.reload21, align 1
+  %x66 = alloca i32, align 4
+  %y67 = alloca i32, align 4
+  %157 = load i32, i32* %x66, align 4
+  %158 = load i32, i32* %y67, align 4
+  %159 = icmp slt i32 %158, 10
+  %160 = add i32 %157, 1
+  %161 = mul i32 %160, %157
+  %162 = urem i32 %161, 2
+  %163 = icmp eq i32 %162, 0
+  %164 = or i1 %159, %163
+  br i1 %164, label %endBB63, label %bodyBB62cloneBB
+
+endBB63:                                          ; preds = %bodyBB62
+  br label %returnBB
+
+165:                                              ; preds = %endBB25
+  %x72 = alloca i32, align 4
+  %y73 = alloca i32, align 4
+  %166 = load i32, i32* %x72, align 4
+  %167 = load i32, i32* %y73, align 4
+  %168 = icmp slt i32 %167, 10
+  %169 = add i32 %166, 1
+  %170 = mul i32 %169, %166
+  %171 = urem i32 %170, 2
+  %172 = icmp eq i32 %171, 0
+  %173 = or i1 %168, %172
+  br i1 %173, label %bodyBB68, label %bodyBB68cloneBB
+
+bodyBB68:                                         ; preds = %bodyBB68cloneBB, %165
+  %174 = getelementptr inbounds [100 x i8], [100 x i8]* %6, i64 0, i64 0
+  %175 = call i32 @memcmp(i8* %174, i8* getelementptr inbounds ([100 x i8], [100 x i8]* bitcast (<{ [22 x i8], [78 x i8] }>* @enc to [100 x i8]*), i64 0, i64 0), i64 22) #5
+  %176 = icmp ne i32 %175, 0
+  store i1 %176, i1* %.reg2mem70, align 1
+  %x74 = alloca i32, align 4
+  %y75 = alloca i32, align 4
+  %177 = load i32, i32* %x74, align 4
+  %178 = load i32, i32* %y75, align 4
+  %179 = icmp slt i32 %178, 10
+  %180 = add i32 %177, 1
+  %181 = mul i32 %180, %177
+  %182 = urem i32 %181, 2
+  %183 = icmp eq i32 %182, 0
+  %184 = or i1 %179, %183
+  br i1 %184, label %endBB69, label %bodyBB68cloneBB
+
+endBB69:                                          ; preds = %bodyBB68
+  br label %185
+
+185:                                              ; preds = %endBB69
+  %x78 = alloca i32, align 4
+  %y79 = alloca i32, align 4
+  %186 = load i32, i32* %x78, align 4
+  %187 = load i32, i32* %y79, align 4
+  %188 = icmp slt i32 %187, 10
+  %189 = add i32 %186, 1
+  %190 = mul i32 %189, %186
+  %191 = urem i32 %190, 2
+  %192 = icmp eq i32 %191, 0
+  %193 = or i1 %188, %192
+  br i1 %193, label %bodyBB76, label %bodyBB76cloneBB
+
+bodyBB76:                                         ; preds = %bodyBB76cloneBB, %185
+  %.reload71 = load volatile i1, i1* %.reg2mem70, align 1
+  store i1 %.reload71, i1* %.reg2mem1, align 1
+  %swVar.ptr.reload12 = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 1668432026, i32* %swVar.ptr.reload12, align 4
+  %x80 = alloca i32, align 4
+  %y81 = alloca i32, align 4
+  %194 = load i32, i32* %x80, align 4
+  %195 = load i32, i32* %y81, align 4
+  %196 = icmp slt i32 %195, 10
+  %197 = add i32 %194, 1
+  %198 = mul i32 %197, %194
+  %199 = urem i32 %198, 2
+  %200 = icmp eq i32 %199, 0
+  %201 = or i1 %196, %200
+  br i1 %201, label %endBB77, label %bodyBB76cloneBB
+
+endBB77:                                          ; preds = %bodyBB76
+  br label %returnBB
+
+202:                                              ; preds = %endBB25
+  %.reload2 = load volatile i1, i1* %.reg2mem1, align 1
+  %203 = xor i1 %.reload2, true
+  %swVar.ptr.reload11 = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 260774751, i32* %swVar.ptr.reload11, align 4
+  br label %204
+
+204:                                              ; preds = %202
+  %x84 = alloca i32, align 4
+  %y85 = alloca i32, align 4
+  %205 = load i32, i32* %x84, align 4
+  %206 = load i32, i32* %y85, align 4
+  %207 = icmp slt i32 %206, 10
+  %208 = add i32 %205, 1
+  %209 = mul i32 %208, %205
+  %210 = urem i32 %209, 2
+  %211 = icmp eq i32 %210, 0
+  %212 = or i1 %207, %211
+  br i1 %212, label %bodyBB82, label %bodyBB82cloneBB
+
+bodyBB82:                                         ; preds = %bodyBB82cloneBB, %204
+  %.reg2mem.reload20 = load volatile i1*, i1** %.reg2mem.reg2mem, align 8
+  store i1 %203, i1* %.reg2mem.reload20, align 1
+  %x86 = alloca i32, align 4
+  %y87 = alloca i32, align 4
+  %213 = load i32, i32* %x86, align 4
+  %214 = load i32, i32* %y87, align 4
+  %215 = icmp slt i32 %214, 10
+  %216 = add i32 %213, 1
+  %217 = mul i32 %216, %213
+  %218 = urem i32 %217, 2
+  %219 = icmp eq i32 %218, 0
+  %220 = or i1 %215, %219
+  br i1 %220, label %endBB83, label %bodyBB82cloneBB
+
+endBB83:                                          ; preds = %bodyBB82
+  br label %returnBB
+
+221:                                              ; preds = %endBB25
+  %.reg2mem.reload = load volatile i1*, i1** %.reg2mem.reg2mem, align 8
+  %.reload = load i1, i1* %.reg2mem.reload, align 1
+  %222 = zext i1 %.reload to i8
+  %.reload5 = load volatile i8*, i8** %.reg2mem2, align 8
+  store i8 %222, i8* %.reload5, align 1
+  %.reload3 = load volatile i8*, i8** %.reg2mem2, align 8
+  %223 = load i8, i8* %.reload3, align 1
+  br label %224
+
+224:                                              ; preds = %221
+  %225 = trunc i8 %223 to i1
+  %226 = select i1 %225, i32 476268099, i32 1363136928
+  %swVar.ptr.reload10 = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 %226, i32* %swVar.ptr.reload10, align 4
+  br label %returnBB
+
+227:                                              ; preds = %endBB25
+  %x90 = alloca i32, align 4
+  %y91 = alloca i32, align 4
+  %228 = load i32, i32* %x90, align 4
+  %229 = load i32, i32* %y91, align 4
   %230 = icmp slt i32 %229, 10
   %231 = add i32 %228, 1
   %232 = mul i32 %231, %228
   %233 = urem i32 %232, 2
   %234 = icmp eq i32 %233, 0
   %235 = or i1 %230, %234
-  br i1 %235, label %endBB47, label %bodyBB46cloneBB
+  br i1 %235, label %bodyBB88, label %bodyBB88cloneBB
 
-endBB47:                                          ; preds = %bodyBB46
-  br label %236
-
-236:                                              ; preds = %endBB47
-  %237 = load i32, i32* @x.83, align 4
-  %238 = load i32, i32* @y.84, align 4
+bodyBB88:                                         ; preds = %bodyBB88cloneBB, %227
+  %236 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.3, i64 0, i64 0))
+  %swVar.ptr.reload9 = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 2044819374, i32* %swVar.ptr.reload9, align 4
+  %x92 = alloca i32, align 4
+  %y93 = alloca i32, align 4
+  %237 = load i32, i32* %x92, align 4
+  %238 = load i32, i32* %y93, align 4
   %239 = icmp slt i32 %238, 10
   %240 = add i32 %237, 1
   %241 = mul i32 %240, %237
   %242 = urem i32 %241, 2
   %243 = icmp eq i32 %242, 0
   %244 = or i1 %239, %243
-  br i1 %244, label %bodyBB48, label %bodyBB48cloneBB
+  br i1 %244, label %endBB89, label %bodyBB88cloneBB
 
-bodyBB48:                                         ; preds = %bodyBB48cloneBB, %236
-  %245 = load i32, i32* @x.85, align 4
-  %246 = load i32, i32* @y.86, align 4
-  %247 = icmp slt i32 %246, 10
-  %248 = add i32 %245, 1
-  %249 = mul i32 %248, %245
-  %250 = urem i32 %249, 2
-  %251 = icmp eq i32 %250, 0
-  %252 = or i1 %247, %251
-  br i1 %252, label %endBB49, label %bodyBB48cloneBB
+endBB89:                                          ; preds = %bodyBB88
+  br label %245
 
-endBB49:                                          ; preds = %bodyBB48
-  br label %253
+245:                                              ; preds = %endBB89
+  br label %returnBB
 
-253:                                              ; preds = %endBB49, %endBB45, %endBB23
-  %254 = load i32, i32* @x.87, align 4
-  %255 = load i32, i32* @y.88, align 4
-  %256 = icmp slt i32 %255, 10
-  %257 = add i32 %254, 1
-  %258 = mul i32 %257, %254
-  %259 = urem i32 %258, 2
-  %260 = icmp eq i32 %259, 0
-  %261 = or i1 %256, %260
-  br i1 %261, label %bodyBB50, label %bodyBB50cloneBB
+246:                                              ; preds = %endBB25
+  %x96 = alloca i32, align 4
+  %y97 = alloca i32, align 4
+  %247 = load i32, i32* %x96, align 4
+  %248 = load i32, i32* %y97, align 4
+  %249 = icmp slt i32 %248, 10
+  %250 = add i32 %247, 1
+  %251 = mul i32 %250, %247
+  %252 = urem i32 %251, 2
+  %253 = icmp eq i32 %252, 0
+  %254 = or i1 %249, %253
+  br i1 %254, label %bodyBB94, label %bodyBB94cloneBB
 
-bodyBB50:                                         ; preds = %bodyBB50cloneBB, %253
-  %.reload = load volatile i32*, i32** %.reg2mem, align 8
-  %262 = load i32, i32* %.reload, align 4
-  store i32 %262, i32* %.reg2mem52, align 4
-  %263 = load i32, i32* @x.89, align 4
-  %264 = load i32, i32* @y.90, align 4
-  %265 = icmp slt i32 %264, 10
-  %266 = add i32 %263, 1
-  %267 = mul i32 %266, %263
-  %268 = urem i32 %267, 2
-  %269 = icmp eq i32 %268, 0
-  %270 = or i1 %265, %269
-  br i1 %270, label %endBB51, label %bodyBB50cloneBB
+bodyBB94:                                         ; preds = %bodyBB94cloneBB, %246
+  %swVar.ptr.reload8 = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 820807999, i32* %swVar.ptr.reload8, align 4
+  %x98 = alloca i32, align 4
+  %y99 = alloca i32, align 4
+  %255 = load i32, i32* %x98, align 4
+  %256 = load i32, i32* %y99, align 4
+  %257 = icmp slt i32 %256, 10
+  %258 = add i32 %255, 1
+  %259 = mul i32 %258, %255
+  %260 = urem i32 %259, 2
+  %261 = icmp eq i32 %260, 0
+  %262 = or i1 %257, %261
+  br i1 %262, label %endBB95, label %bodyBB94cloneBB
 
-endBB51:                                          ; preds = %bodyBB50
-  br label %271
+endBB95:                                          ; preds = %bodyBB94
+  br label %263
 
-271:                                              ; preds = %endBB51
-  %272 = load i32, i32* @x.91, align 4
-  %273 = load i32, i32* @y.92, align 4
+263:                                              ; preds = %endBB95
+  %x102 = alloca i32, align 4
+  %y103 = alloca i32, align 4
+  %264 = load i32, i32* %x102, align 4
+  %265 = load i32, i32* %y103, align 4
+  %266 = icmp slt i32 %265, 10
+  %267 = add i32 %264, 1
+  %268 = mul i32 %267, %264
+  %269 = urem i32 %268, 2
+  %270 = icmp eq i32 %269, 0
+  %271 = or i1 %266, %270
+  br i1 %271, label %bodyBB100, label %bodyBB100cloneBB
+
+bodyBB100:                                        ; preds = %bodyBB100cloneBB, %263
+  %x104 = alloca i32, align 4
+  %y105 = alloca i32, align 4
+  %272 = load i32, i32* %x104, align 4
+  %273 = load i32, i32* %y105, align 4
   %274 = icmp slt i32 %273, 10
   %275 = add i32 %272, 1
   %276 = mul i32 %275, %272
   %277 = urem i32 %276, 2
   %278 = icmp eq i32 %277, 0
   %279 = or i1 %274, %278
-  br i1 %279, label %bodyBB54, label %bodyBB54cloneBB
+  br i1 %279, label %endBB101, label %bodyBB100cloneBB
 
-bodyBB54:                                         ; preds = %bodyBB54cloneBB, %271
-  %.reload53 = load volatile i32, i32* %.reg2mem52, align 4
-  store i32 %.reload53, i32* %.reload53.reg2mem, align 4
-  %280 = load i32, i32* @x.93, align 4
-  %281 = load i32, i32* @y.94, align 4
-  %282 = icmp slt i32 %281, 10
-  %283 = add i32 %280, 1
-  %284 = mul i32 %283, %280
-  %285 = urem i32 %284, 2
-  %286 = icmp eq i32 %285, 0
-  %287 = or i1 %282, %286
-  br i1 %287, label %endBB55, label %bodyBB54cloneBB
+endBB101:                                         ; preds = %bodyBB100
+  br label %returnBB
 
-endBB55:                                          ; preds = %bodyBB54
-  %.reload53.reload = load volatile i32, i32* %.reload53.reg2mem, align 4
-  ret i32 %.reload53.reload
+280:                                              ; preds = %endBB25
+  %x108 = alloca i32, align 4
+  %y109 = alloca i32, align 4
+  %281 = load i32, i32* %x108, align 4
+  %282 = load i32, i32* %y109, align 4
+  %283 = icmp slt i32 %282, 10
+  %284 = add i32 %281, 1
+  %285 = mul i32 %284, %281
+  %286 = urem i32 %285, 2
+  %287 = icmp eq i32 %286, 0
+  %288 = or i1 %283, %287
+  br i1 %288, label %bodyBB106, label %bodyBB106cloneBB
 
-bodyBBcloneBB:                                    ; preds = %bodyBB, %2
-  %288 = alloca i32, align 4
-  store i32* %288, i32** %.reg2mem, align 8
-  %289 = alloca i32, align 4
-  store i32* %289, i32** %.reg2mem3, align 8
-  %290 = alloca i8**, align 8
-  store i8*** %290, i8**** %.reg2mem6, align 8
-  %291 = alloca [100 x i8], align 16
-  store [100 x i8]* %291, [100 x i8]** %.reg2mem9, align 8
-  %292 = alloca i8, align 1
-  store i8* %292, i8** %.reg2mem13, align 8
-  %.reload2cloneBB = load volatile i32*, i32** %.reg2mem, align 8
-  store i32 0, i32* %.reload2cloneBB, align 4
+bodyBB106:                                        ; preds = %bodyBB106cloneBB, %280
+  %289 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.4, i64 0, i64 0))
+  %swVar.ptr.reload7 = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 1836996258, i32* %swVar.ptr.reload7, align 4
+  %x110 = alloca i32, align 4
+  %y111 = alloca i32, align 4
+  %290 = load i32, i32* %x110, align 4
+  %291 = load i32, i32* %y111, align 4
+  %292 = icmp slt i32 %291, 10
+  %293 = add i32 %290, 1
+  %294 = mul i32 %293, %290
+  %295 = urem i32 %294, 2
+  %296 = icmp eq i32 %295, 0
+  %297 = or i1 %292, %296
+  br i1 %297, label %endBB107, label %bodyBB106cloneBB
+
+endBB107:                                         ; preds = %bodyBB106
+  br label %298
+
+298:                                              ; preds = %endBB107
+  %x114 = alloca i32, align 4
+  %y115 = alloca i32, align 4
+  %299 = load i32, i32* %x114, align 4
+  %300 = load i32, i32* %y115, align 4
+  %301 = icmp slt i32 %300, 10
+  %302 = add i32 %299, 1
+  %303 = mul i32 %302, %299
+  %304 = urem i32 %303, 2
+  %305 = icmp eq i32 %304, 0
+  %306 = or i1 %301, %305
+  br i1 %306, label %bodyBB112, label %bodyBB112cloneBB
+
+bodyBB112:                                        ; preds = %bodyBB112cloneBB, %298
+  %x116 = alloca i32, align 4
+  %y117 = alloca i32, align 4
+  %307 = load i32, i32* %x116, align 4
+  %308 = load i32, i32* %y117, align 4
+  %309 = icmp slt i32 %308, 10
+  %310 = add i32 %307, 1
+  %311 = mul i32 %310, %307
+  %312 = urem i32 %311, 2
+  %313 = icmp eq i32 %312, 0
+  %314 = or i1 %309, %313
+  br i1 %314, label %endBB113, label %bodyBB112cloneBB
+
+endBB113:                                         ; preds = %bodyBB112
+  br label %returnBB
+
+315:                                              ; preds = %endBB25
+  %swVar.ptr.reload6 = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 820807999, i32* %swVar.ptr.reload6, align 4
+  br label %316
+
+316:                                              ; preds = %315
+  %x120 = alloca i32, align 4
+  %y121 = alloca i32, align 4
+  %317 = load i32, i32* %x120, align 4
+  %318 = load i32, i32* %y121, align 4
+  %319 = icmp slt i32 %318, 10
+  %320 = add i32 %317, 1
+  %321 = mul i32 %320, %317
+  %322 = urem i32 %321, 2
+  %323 = icmp eq i32 %322, 0
+  %324 = or i1 %319, %323
+  br i1 %324, label %bodyBB118, label %bodyBB118cloneBB
+
+bodyBB118:                                        ; preds = %bodyBB118cloneBB, %316
+  %x122 = alloca i32, align 4
+  %y123 = alloca i32, align 4
+  %325 = load i32, i32* %x122, align 4
+  %326 = load i32, i32* %y123, align 4
+  %327 = icmp slt i32 %326, 10
+  %328 = add i32 %325, 1
+  %329 = mul i32 %328, %325
+  %330 = urem i32 %329, 2
+  %331 = icmp eq i32 %330, 0
+  %332 = or i1 %327, %331
+  br i1 %332, label %endBB119, label %bodyBB118cloneBB
+
+endBB119:                                         ; preds = %bodyBB118
+  br label %returnBB
+
+333:                                              ; preds = %endBB25
+  %x126 = alloca i32, align 4
+  %y127 = alloca i32, align 4
+  %334 = load i32, i32* %x126, align 4
+  %335 = load i32, i32* %y127, align 4
+  %336 = icmp slt i32 %335, 10
+  %337 = add i32 %334, 1
+  %338 = mul i32 %337, %334
+  %339 = urem i32 %338, 2
+  %340 = icmp eq i32 %339, 0
+  %341 = or i1 %336, %340
+  br i1 %341, label %bodyBB124, label %bodyBB124cloneBB
+
+bodyBB124:                                        ; preds = %bodyBB124cloneBB, %333
+  %342 = load i32, i32* %3, align 4
+  store i32 %342, i32* %.reg2mem3, align 4
+  %x128 = alloca i32, align 4
+  %y129 = alloca i32, align 4
+  %343 = load i32, i32* %x128, align 4
+  %344 = load i32, i32* %y129, align 4
+  %345 = icmp slt i32 %344, 10
+  %346 = add i32 %343, 1
+  %347 = mul i32 %346, %343
+  %348 = urem i32 %347, 2
+  %349 = icmp eq i32 %348, 0
+  %350 = or i1 %345, %349
+  br i1 %350, label %endBB125, label %bodyBB124cloneBB
+
+endBB125:                                         ; preds = %bodyBB124
+  br label %351
+
+351:                                              ; preds = %endBB125
+  %swVar.ptr.reload = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 1588063422, i32* %swVar.ptr.reload, align 4
+  br label %returnBB
+
+352:                                              ; preds = %endBB25
+  %.reload4 = load volatile i32, i32* %.reg2mem3, align 4
+  br label %353
+
+353:                                              ; preds = %352
+  %x132 = alloca i32, align 4
+  %y133 = alloca i32, align 4
+  %354 = load i32, i32* %x132, align 4
+  %355 = load i32, i32* %y133, align 4
+  %356 = icmp slt i32 %355, 10
+  %357 = add i32 %354, 1
+  %358 = mul i32 %357, %354
+  %359 = urem i32 %358, 2
+  %360 = icmp eq i32 %359, 0
+  %361 = or i1 %356, %360
+  br i1 %361, label %bodyBB130, label %bodyBB130cloneBB
+
+bodyBB130:                                        ; preds = %bodyBB130cloneBB, %353
+  %x134 = alloca i32, align 4
+  %y135 = alloca i32, align 4
+  %362 = load i32, i32* %x134, align 4
+  %363 = load i32, i32* %y135, align 4
+  %364 = icmp slt i32 %363, 10
+  %365 = add i32 %362, 1
+  %366 = mul i32 %365, %362
+  %367 = urem i32 %366, 2
+  %368 = icmp eq i32 %367, 0
+  %369 = or i1 %364, %368
+  br i1 %369, label %endBB131, label %bodyBB130cloneBB
+
+endBB131:                                         ; preds = %bodyBB130
+  ret i32 %.reload4
+
+returnBB:                                         ; preds = %351, %endBB119, %endBB113, %endBB101, %245, %224, %endBB83, %endBB77, %endBB63, %endBB57, %endBB51, %endBB45, %61, %swDefault
+  %x138 = alloca i32, align 4
+  %y139 = alloca i32, align 4
+  %370 = load i32, i32* %x138, align 4
+  %371 = load i32, i32* %y139, align 4
+  %372 = icmp slt i32 %371, 10
+  %373 = add i32 %370, 1
+  %374 = mul i32 %373, %370
+  %375 = urem i32 %374, 2
+  %376 = icmp eq i32 %375, 0
+  %377 = or i1 %372, %376
+  br i1 %377, label %bodyBB136, label %bodyBB136cloneBB
+
+bodyBB136:                                        ; preds = %bodyBB136cloneBB, %returnBB
+  %x140 = alloca i32, align 4
+  %y141 = alloca i32, align 4
+  %378 = load i32, i32* %x140, align 4
+  %379 = load i32, i32* %y141, align 4
+  %380 = icmp slt i32 %379, 10
+  %381 = add i32 %378, 1
+  %382 = mul i32 %381, %378
+  %383 = urem i32 %382, 2
+  %384 = icmp eq i32 %383, 0
+  %385 = or i1 %380, %384
+  br i1 %385, label %endBB137, label %bodyBB136cloneBB
+
+endBB137:                                         ; preds = %bodyBB136
+  br label %dispatchBB
+
+bodyBBcloneBB:                                    ; preds = %bodyBB, %7
+  %386 = alloca i8, align 1
+  store i8* %386, i8** %.reg2mem2, align 8
+  store i32 0, i32* %3, align 4
+  %swVar.ptrcloneBB = alloca i32, align 4
+  store i32* %swVar.ptrcloneBB, i32** %swVar.ptr.reg2mem, align 8
+  %swVar.ptr.reload19cloneBB = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 985482766, i32* %swVar.ptr.reload19cloneBB, align 4
+  %.reg2memcloneBB = alloca i1, align 1
+  store i1* %.reg2memcloneBB, i1** %.reg2mem.reg2mem, align 8
   br label %bodyBB
 
-bodyBB16cloneBB:                                  ; preds = %bodyBB16, %24
-  %.reload5cloneBB = load volatile i32*, i32** %.reg2mem3, align 8
-  store i32 %0, i32* %.reload5cloneBB, align 4
-  %.reload8cloneBB = load volatile i8***, i8**** %.reg2mem6, align 8
-  store i8** %1, i8*** %.reload8cloneBB, align 8
-  %293 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str, i64 0, i64 0))
-  %.reload4cloneBB = load volatile i32*, i32** %.reg2mem3, align 8
-  %294 = load i32, i32* %.reload4cloneBB, align 4
-  %295 = icmp sle i32 %294, 1
-  store i1 %295, i1* %.reg2mem18, align 1
-  br label %bodyBB16
-
-bodyBB20cloneBB:                                  ; preds = %bodyBB20, %44
-  %296 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([33 x i8], [33 x i8]* @.str.1, i64 0, i64 0))
-  %.reload1cloneBB = load volatile i32*, i32** %.reg2mem, align 8
-  store i32 0, i32* %.reload1cloneBB, align 4
-  br label %bodyBB20
-
-bodyBB22cloneBB:                                  ; preds = %bodyBB22, %62
-  br label %bodyBB22
-
-bodyBB24cloneBB:                                  ; preds = %bodyBB24, %79
-  %.reload7cloneBB = load volatile i8***, i8**** %.reg2mem6, align 8
-  %297 = load i8**, i8*** %.reload7cloneBB, align 8
-  %298 = getelementptr inbounds i8*, i8** %297, i64 1
-  %299 = load i8*, i8** %298, align 8
-  store i8* %299, i8** @input, align 8
-  %300 = load i8*, i8** @input, align 8
-  %301 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.2, i64 0, i64 0), i8* %300)
-  %.reload12cloneBB = load volatile [100 x i8]*, [100 x i8]** %.reg2mem9, align 8
-  %302 = bitcast [100 x i8]* %.reload12cloneBB to i8*
-  call void @llvm.memset.p0i8.i64(i8* align 16 %302, i8 0, i64 100, i1 false)
+bodyBB24cloneBB:                                  ; preds = %bodyBB24, %25
   br label %bodyBB24
 
-bodyBB26cloneBB:                                  ; preds = %bodyBB26, %102
-  %.reload11cloneBB = load volatile [100 x i8]*, [100 x i8]** %.reg2mem9, align 8
-  %303 = getelementptr inbounds [100 x i8], [100 x i8]* %.reload11cloneBB, i64 0, i64 0
-  %304 = load i8*, i8** @input, align 8
-  call void @_Z7encryptPhPc(i8* %303, i8* %304)
-  %305 = load i8*, i8** @input, align 8
-  %306 = call i64 @strlen(i8* %305) #5
-  %307 = icmp eq i64 %306, 22
-  store i1 %307, i1* %.reg2mem28, align 1
-  br label %bodyBB26
-
-bodyBB30cloneBB:                                  ; preds = %bodyBB30, %124
-  %.reload10cloneBB = load volatile [100 x i8]*, [100 x i8]** %.reg2mem9, align 8
-  %308 = getelementptr inbounds [100 x i8], [100 x i8]* %.reload10cloneBB, i64 0, i64 0
-  %309 = call i32 @memcmp(i8* %308, i8* getelementptr inbounds ([100 x i8], [100 x i8]* bitcast (<{ [22 x i8], [78 x i8] }>* @enc to [100 x i8]*), i64 0, i64 0), i64 22) #5
-  %310 = icmp ne i32 %309, 0
-  store i1 %310, i1* %.reg2mem32, align 1
+bodyBB30cloneBB:                                  ; preds = %bodyBB30, %42
+  store i32 %0, i32* %4, align 4
+  store i8** %1, i8*** %5, align 8
+  %387 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str, i64 0, i64 0))
+  %388 = load i32, i32* %4, align 4
+  store i32 %388, i32* %.reg2mem32, align 4
   br label %bodyBB30
 
-bodyBB34cloneBB:                                  ; preds = %bodyBB34, %144
-  %.reload33cloneBB = load volatile i1, i1* %.reg2mem32, align 1
-  %311 = xor i1 %.reload33cloneBB, true
-  store i1 %311, i1* %.reg2mem36, align 1
-  br label %bodyBB34
-
-bodyBB38cloneBB:                                  ; preds = %bodyBB38, %162
-  %312 = zext i1 %163 to i8
-  %.reload15cloneBB = load volatile i8*, i8** %.reg2mem13, align 8
-  store i8 %312, i8* %.reload15cloneBB, align 1
-  %.reload14cloneBB = load volatile i8*, i8** %.reg2mem13, align 8
-  %313 = load i8, i8* %.reload14cloneBB, align 1
-  %314 = trunc i8 %313 to i1
-  store i1 %314, i1* %.reg2mem40, align 1
+bodyBB38cloneBB:                                  ; preds = %bodyBB38, %64
+  %389 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([33 x i8], [33 x i8]* @.str.1, i64 0, i64 0))
+  store i32 0, i32* %3, align 4
   br label %bodyBB38
 
-bodyBB42cloneBB:                                  ; preds = %bodyBB42, %183
-  %315 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.3, i64 0, i64 0))
-  br label %bodyBB42
-
-bodyBB44cloneBB:                                  ; preds = %bodyBB44, %201
+bodyBB44cloneBB:                                  ; preds = %bodyBB44, %82
+  %swVar.ptr.reload16cloneBB = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 2123708365, i32* %swVar.ptr.reload16cloneBB, align 4
   br label %bodyBB44
 
-bodyBB46cloneBB:                                  ; preds = %bodyBB46, %218
-  %316 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.4, i64 0, i64 0))
-  br label %bodyBB46
-
-bodyBB48cloneBB:                                  ; preds = %bodyBB48, %236
-  br label %bodyBB48
-
-bodyBB50cloneBB:                                  ; preds = %bodyBB50, %253
-  %.reloadcloneBB = load volatile i32*, i32** %.reg2mem, align 8
-  %317 = load i32, i32* %.reloadcloneBB, align 4
-  store i32 %317, i32* %.reg2mem52, align 4
+bodyBB50cloneBB:                                  ; preds = %bodyBB50, %100
   br label %bodyBB50
 
-bodyBB54cloneBB:                                  ; preds = %bodyBB54, %271
-  %.reload53cloneBB = load volatile i32, i32* %.reg2mem52, align 4
-  store i32 %.reload53cloneBB, i32* %.reload53.reg2mem, align 4
-  br label %bodyBB54
+bodyBB56cloneBB:                                  ; preds = %bodyBB56, %122
+  %390 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.2, i64 0, i64 0), i8* %121)
+  %391 = bitcast [100 x i8]* %6 to i8*
+  call void @llvm.memset.p0i8.i64(i8* align 16 %391, i8 0, i64 100, i1 false)
+  %swVar.ptr.reload14cloneBB = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 1064663363, i32* %swVar.ptr.reload14cloneBB, align 4
+  br label %bodyBB56
+
+bodyBB62cloneBB:                                  ; preds = %bodyBB62, %146
+  %392 = icmp eq i64 %145, 22
+  %393 = select i1 %392, i32 2019953326, i32 260774751
+  %swVar.ptr.reload13cloneBB = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 %393, i32* %swVar.ptr.reload13cloneBB, align 4
+  %.reg2mem.reload21cloneBB = load volatile i1*, i1** %.reg2mem.reg2mem, align 8
+  store i1 false, i1* %.reg2mem.reload21cloneBB, align 1
+  br label %bodyBB62
+
+bodyBB68cloneBB:                                  ; preds = %bodyBB68, %165
+  %394 = getelementptr inbounds [100 x i8], [100 x i8]* %6, i64 0, i64 0
+  %395 = call i32 @memcmp(i8* %394, i8* getelementptr inbounds ([100 x i8], [100 x i8]* bitcast (<{ [22 x i8], [78 x i8] }>* @enc to [100 x i8]*), i64 0, i64 0), i64 22) #5
+  %396 = icmp ne i32 %395, 0
+  store i1 %396, i1* %.reg2mem70, align 1
+  br label %bodyBB68
+
+bodyBB76cloneBB:                                  ; preds = %bodyBB76, %185
+  %.reload71cloneBB = load volatile i1, i1* %.reg2mem70, align 1
+  store i1 %.reload71cloneBB, i1* %.reg2mem1, align 1
+  %swVar.ptr.reload12cloneBB = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 1668432026, i32* %swVar.ptr.reload12cloneBB, align 4
+  br label %bodyBB76
+
+bodyBB82cloneBB:                                  ; preds = %bodyBB82, %204
+  %.reg2mem.reload20cloneBB = load volatile i1*, i1** %.reg2mem.reg2mem, align 8
+  store i1 %203, i1* %.reg2mem.reload20cloneBB, align 1
+  br label %bodyBB82
+
+bodyBB88cloneBB:                                  ; preds = %bodyBB88, %227
+  %397 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.3, i64 0, i64 0))
+  %swVar.ptr.reload9cloneBB = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 2044819374, i32* %swVar.ptr.reload9cloneBB, align 4
+  br label %bodyBB88
+
+bodyBB94cloneBB:                                  ; preds = %bodyBB94, %246
+  %swVar.ptr.reload8cloneBB = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 820807999, i32* %swVar.ptr.reload8cloneBB, align 4
+  br label %bodyBB94
+
+bodyBB100cloneBB:                                 ; preds = %bodyBB100, %263
+  br label %bodyBB100
+
+bodyBB106cloneBB:                                 ; preds = %bodyBB106, %280
+  %398 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.4, i64 0, i64 0))
+  %swVar.ptr.reload7cloneBB = load volatile i32*, i32** %swVar.ptr.reg2mem, align 8
+  store i32 1836996258, i32* %swVar.ptr.reload7cloneBB, align 4
+  br label %bodyBB106
+
+bodyBB112cloneBB:                                 ; preds = %bodyBB112, %298
+  br label %bodyBB112
+
+bodyBB118cloneBB:                                 ; preds = %bodyBB118, %316
+  br label %bodyBB118
+
+bodyBB124cloneBB:                                 ; preds = %bodyBB124, %333
+  %399 = load i32, i32* %3, align 4
+  store i32 %399, i32* %.reg2mem3, align 4
+  br label %bodyBB124
+
+bodyBB130cloneBB:                                 ; preds = %bodyBB130, %353
+  br label %bodyBB130
+
+bodyBB136cloneBB:                                 ; preds = %bodyBB136, %returnBB
+  br label %bodyBB136
 }
 
 declare dso_local i32 @printf(i8*, ...) #3
@@ -1088,5 +1409,3 @@ attributes #5 = { nounwind readonly willreturn }
 !1 = !{i32 7, !"uwtable", i32 1}
 !2 = !{i32 7, !"frame-pointer", i32 2}
 !3 = !{!"clang version 13.0.1"}
-!4 = distinct !{!4, !5}
-!5 = !{!"llvm.loop.mustprogress"}

@@ -48,7 +48,11 @@ bool BogusControlFlow::runOnFunction(Function &F){
             origBB.push_back(&BB);
         }
         for(BasicBlock *BB : origBB){
-            bogus(BB);
+            int i = rand();
+            if(i % 2 == 0) {
+                bogus(BB);
+            }
+            
         }
     }
     return true;
@@ -58,8 +62,10 @@ Value* BogusControlFlow::createBogusCmp(BasicBlock *insertAfter){
     // if((y < 10 || x * (x + 1) % 2 == 0))
     // 等价于 if(true)
     Module *M = insertAfter->getModule();
-    GlobalVariable *xptr = new GlobalVariable(*M, TYPE_I32, false, GlobalValue::CommonLinkage, CONST_I32(0), "x");
-    GlobalVariable *yptr = new GlobalVariable(*M, TYPE_I32, false, GlobalValue::CommonLinkage, CONST_I32(0), "y");
+    auto xptr = new AllocaInst(TYPE_I32, 0, "x",insertAfter);
+    auto yptr = new AllocaInst(TYPE_I32, 0, "y",insertAfter);
+    //GlobalVariable *xptr = new GlobalVariable(*M, TYPE_I32, false, GlobalValue::CommonLinkage, CONST_I32(0), "x");
+    //GlobalVariable *yptr = new GlobalVariable(*M, TYPE_I32, false, GlobalValue::CommonLinkage, CONST_I32(0), "y");
     LoadInst *x = new LoadInst(TYPE_I32, xptr, "", insertAfter);
     LoadInst *y = new LoadInst(TYPE_I32, yptr, "", insertAfter);
     ICmpInst *cond1 = new ICmpInst(*insertAfter, CmpInst::ICMP_SLT, y, CONST_I32(10));
@@ -93,6 +99,7 @@ void BogusControlFlow::bogus(BasicBlock *entryBB){
     // 4. 将 bodyBB 到 endBB的绝对跳转改为条件跳转
     BranchInst::Create(endBB, cloneBB, cond2, bodyBB);
     // 5. 添加 bodyBB.clone 到 bodyBB 的绝对跳转
+    //BranchInst::Create(endBB, bodyBB);
     BranchInst::Create(bodyBB, cloneBB);
 }
 

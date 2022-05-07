@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC    -fno-exceptions -fno-rtti
 
 CXX_DEFINES = -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS
 
-CXX_INCLUDES = -I/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/./include 
+CXX_INCLUDES = -I/home/starfish/Public/毕业论文/test/WAP/Transforms/./include 
 

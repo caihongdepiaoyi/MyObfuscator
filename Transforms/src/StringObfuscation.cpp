@@ -63,7 +63,7 @@ namespace llvm {
                                     );
                                     dynGV->setInitializer(gv->getInitializer());
                                     std::string tmp=gv->getName().str();
-                                    errs()<<"GV: "<<*gv<<"\n";
+                                    //errs()<<"GV: "<<*gv<<"\n";
 
                                     Constant *initializer = gv->getInitializer();
                                     ConstantDataSequential *cdata = dyn_cast<ConstantDataSequential>(initializer);
@@ -76,7 +76,7 @@ namespace llvm {
                                                 cur->var = dynGV;
                                                 //outs() << *cur->var << "\n";
                                                 cur->key = rand();
-                                                outs() << cur->key << "\n";
+                                                //outs() << cur->key << "\n";
                                                 char *encr = const_cast<char *>(orig);
                                                 // Simple xor encoding
                                                 for (unsigned i = 0; i != len; ++i) {

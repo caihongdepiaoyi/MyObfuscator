@@ -10,7 +10,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
-  "/home/starfish/Public/毕业论文/test/OLLVM++-demo/Transforms/CMakeLists.txt"
+  "/home/starfish/Public/毕业论文/test/WAP/Transforms/CMakeLists.txt"
   "/usr/local/lib/cmake/llvm/AddLLVM.cmake"
   "/usr/local/lib/cmake/llvm/DetermineGCCCompatible.cmake"
   "/usr/local/lib/cmake/llvm/LLVM-Config.cmake"
